@@ -1,0 +1,113 @@
+/*
+ * Team.less
+ * -----------------------------------------------
+*/
+.couple {
+  .heart {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 10%;
+    opacity: 0.3;
+    
+  }
+  .social-icons li {
+    margin: 0 5px;
+  }
+}
+
+.best-people {
+  text-align: center;
+  &:hover {
+    .best-people-details {
+      opacity: 1;
+        .scale(1);
+        .transition(all 0.5s ease 0s);
+    }
+  }
+
+  .name {
+    font-size: 30px;
+  }
+
+  .relation {
+    color: @gray-darkgray;
+    font-size: 16px;
+  }
+  .thumb {  
+    overflow: hidden;
+    position: relative;
+  }
+  .best-people-details {
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      .scale(0);
+      .transition(all 0.5s ease 0s);
+      a {
+        color: @white-base;
+        font-size: 30px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        text-transform: uppercase;
+        top: 44%;
+    }
+  }
+  .frame-left {
+    background: url("../images/about/frame-left.png") no-repeat scroll 0 0;
+    left: 0;
+    top: 0;
+    height: 139px;
+    position: absolute;
+    width: 139px;
+  }
+
+  .frame-right {
+    background: url("../images/about/frame-left.png") no-repeat scroll 0 0;
+    right: 0 !important;
+    top: 0;
+    height: 139px;
+    position: absolute;
+    width: 139px;
+  }
+
+  .frame-top {
+    background: url("../images/about/frame-top.png") no-repeat scroll 0 0;
+    right: 0;
+    top: 0;
+    height: 139px;
+    position: absolute;
+    width: 139px;
+  }
+  
+  .frame-bottom-right {
+    background: url("../images/about/frame-bottom-right.png") no-repeat scroll 0 0;
+    bottom: 0;
+    right: 0;
+    height: 139px;
+    position: absolute;
+    width: 139px;
+  }
+  .frame-bottom-left, {
+    background: url("../images/about/frame-bottom-left.png") no-repeat scroll 0 0;
+    bottom: 0;
+    left: 0;
+    height: 139px;
+    position: absolute;
+    width: 139px;
+  }
+
+}
+
+.separator-border {
+  background-position: center;
+  background-repeat: repeat-y;
+  background-image: url(../images/dividers-set3.png);
+  min-height: 600px;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  filter: alpha(opacity=30);
+}

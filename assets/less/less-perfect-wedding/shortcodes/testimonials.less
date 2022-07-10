@@ -1,0 +1,63 @@
+/*
+ * Shortcode: Testimonials.less
+ * -----------------------------------------------
+*/
+.testimonial {
+  .item {
+    border: 1px solid @gray-lightgray;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    .thumb {
+      max-width: 55px;
+    }
+
+    &::after {
+      display: inline-block;
+      height: 150px;
+      left: -45px;
+      position: absolute;
+      top: -45px;
+      .rotate(45deg);
+      width: 60px;
+    }
+
+    &::before {
+      content: "\f10e";
+      color: @white-base;
+      display: inline-block;
+      font-family: fontawesome;
+      font-size: 16px;
+      font-style: normal;
+      left: 10px;
+      position: absolute;
+      text-align: center;
+      top: 5px;
+      z-index: @zindex-testimonial;
+    }
+  } 
+  .quote {
+      height: 50px;
+      margin: 30px auto auto;
+      transform: rotate(45deg);
+      width: 50px;
+      i {
+        display: block;
+        font-size: 20px;
+        line-height: 50px;
+        transform: rotate(-45deg);
+      }
+  } 
+}
+.testimonial-carousel {
+  .content {
+      text-align: center;
+    p {
+      color: @white-base;
+      font-size: @font-size-h5;
+    }
+  }
+}
+
+
+
