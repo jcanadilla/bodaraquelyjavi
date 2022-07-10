@@ -29,6 +29,7 @@ baseurl: "/bodaraquelyjavi" # the subpath of your site, e.g. /blog
 url: "https://jcanadilla.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username: jekyll
+show_dir_listing: false
 
 # Build settings
 theme: minima
@@ -37,6 +38,11 @@ plugins:
 
 defaults:
   - scope:
-      path: "assets/images"
+      path: ""
     values:
-      image: true
+      layout: "default"
+
+collections:
+  a0901650a54cce4ca49e01d079ed31d1104a6614:
+    output: true
+    permalink: /:collection/:name

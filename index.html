@@ -1,0 +1,88 @@
+---
+layout: password
+---
+<!-- start main-content -->
+<script type="text/javascript"
+	src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
+
+<div class="main-content">
+	<!-- Section: home -->
+	<section id="home" class="bg-lightest fullscreen">
+		<div class="display-table text-center">
+			<div class="display-table-cell">
+				<div class="container pt-0 pb-0">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+							<h1 class="font-weight-100 font-64 mb-20">Under construction</h1>
+							<div class="row">
+								<div class="col-md-6 col-md-push-3">
+									<form id="mailchimp-subscription-form"
+										class="newsletter-form mt-0 mb-30 maxwidth500">
+										<label for="mce-EMAIL"></label>
+										<div class="input-group">
+											<input id="password" type="text" id="mce-EMAIL" data-height="45px"
+												class="form-control input-lg" placeholder="Contraseña" name="password"
+												value="">
+											<span class="input-group-btn">
+												<button id="loginbutton" type="submit"
+													class="btn btn-colored btn-theme-colored btn-xs m-0"
+													data-height="45px" style="height: 45px;">Entrar</button>
+											</span>
+										</div>
+									</form>
+
+									<script type="text/javascript">
+										"use strict";
+
+
+										function loadPage(pwd) {
+
+											var hash = pwd;
+											hash = Sha1.hash(pwd);
+											var url = hash + "/index.html";
+
+											$.ajax({
+												url: url,
+												dataType: "html",
+												success: function (data) {
+
+													window.location = url;
+
+												},
+												error: function (xhr, ajaxOptions, thrownError) {
+
+
+													parent.location.hash = hash;
+
+													//$("#wrongPassword").show();
+													$("#password").attr("placeholder", "wrong password");
+													$("#password").val("");
+												}
+											});
+										}
+
+
+										$("#loginbutton").on("click", function () {
+											loadPage($("#password").val());
+										});
+										$("#password").keypress(function (e) {
+											if (e.which == 13) {
+
+												loadPage($("#password").val());
+											}
+										});
+										$("#password").focus();
+
+									</script>
+
+								</div>
+							</div>
+							<p class="font-14">Te hemos dado una contraseña, introdúcela para ver la web completa</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<!-- end main-content -->
