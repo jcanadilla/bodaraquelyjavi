@@ -1,5 +1,5 @@
 ---
-name: home
+title: home
 layout: default
 ---
 
@@ -8,13 +8,7 @@ layout: default
 	<section id="home" class="divider parallax no-bg layer-overlay overlay-dark-3">
 		<div class="maximage-slider">
 			<div id="maximage">
-				<img src="http://placehold.it/1920x1277" alt="" />
-				<img src="http://placehold.it/1920x1277" alt="" />
-				<img src="http://placehold.it/1920x1285" alt="" />
-			</div>
-			<div class="fullscreen-controls"> <a class="img-prev"><img src="{{'assets/images/arrow-left.png'}}"
-						alt=""></a>
-				<a class="img-next"><img src="{{'assets/images/arrow-right.png'}}" alt=""></a>
+				<img src="{{'/assets/nosotros/IMG_20220706_144941.jpg' | relative_url}}" alt="" />
 			</div>
 		</div>
 		<div class="display-table">
@@ -23,12 +17,12 @@ layout: default
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3">
 							<div class="bg-white-transparent text-center pt-20 pb-50 outline-border">
-								<h2 class="text-black-555 text-uppercase font-Playfair font-48">Jenny <span
-										class="">&</span> Jon Doe</h2>
+								<h2 class="text-black-555 font-60 ">Raquel <span
+										class="">&</span> Javi</h2>
 								<i class="fa fa-heart text-theme-colored font-48 mt-20"></i>
-								<h2 class="text-black-555 font-weight-100 font-36 mt-10">are getting married
+								<h2 class="text-black-555 font-weight-100 font-48 mt-10">El gran día es el
 								</h2>
-								<h2 class="text-black-555 mt-0">15/9/2017</h2>
+								<h2 class="text-black-555 mt-0">13 de Mayo de 2023</h2>
 							</div>
 						</div>
 					</div>
@@ -41,15 +35,13 @@ layout: default
 	<section>
 		<div class="container-fluid p-0">
 			<div class="row bg-theme-colored">
-				<div
-					class="col-md-4 col-sm-12 col-md-offset-1 pb-sm-60 pr-sm-30 pt-sm-50 pt-md-40 pb-md-10 pr-60 pt-80 text-center">
-					<i class="fa fa-diamond fa-3x text-white"></i>
-					<h2 class="text-white font-54">we'r getting married!</h2>
-					<p class="text-white">Jenny & Jon Does getting married!</p>
+				<div class="col-md-4 col-sm-12 col-md-offset-1 pb-sm-60 pr-sm-30 pt-sm-50 pt-md-40 pb-md-10 pr-60 pt-80 text-center">
+					<i class="fa fa-calendar-o  fa-3x text-white"></i>
+					<h2 class="text-white font-54">Prepárate porque quedan...</h2>
 				</div>
 				<div class="col-md-7 col-sm-12 bg-black-333 pt-sm-40 pb-sm-20 pt-50 pb-10">
 					<div class="soon" id="countdown-timer-soon-glow" data-layout="group overlap"
-						data-face="slot doctor glow" data-padding="false" data-scale-max="l" data-due="2016-06-01"
+						data-face="slot doctor glow" data-padding="false" data-scale-max="l" data-due="2023-05-13"
 						data-visual="ring color-light width-thin glow-progress length-70 gap-0 offset-65">
 					</div>
 				</div>
@@ -63,8 +55,8 @@ layout: default
 			<div class="section-title">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3 text-center pb-30 wow fadeInUp animation-delay1">
-						<h2>The Couple</h2>
-						<img src="{{'assets/images/section-title-after.png'}}" alt="">
+						<h2>Nosotros</h2>
+						<img src="{{'/assets/images/section-title-after.png'| relative_url}}" alt="">
 						<p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dignissimos nihil
 								unde dolores qui, adipisci assumenda atque blanditiis omnis nostrum!</em></p>
 					</div>
@@ -80,8 +72,8 @@ layout: default
 								<span class="frame-top"></span> <span class="frame-bottom-left"></span>
 							</div>
 							<div class="info">
-								<h2 class="name">Jenny</h2>
-								<img src="{{'assets/images/about-title-bg.png'}}" alt="">
+								<h2 class="name">Raquel</h2>
+								<img src="{{'/assets/images/about-title-bg.png'| relative_url}}" alt="">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing tempor incididunt ut
 									labore et dolore magna et sed aliqua. Ut enim ad minim veniam, quis nostrud
 									nisi ut aliquip ex ea commodo consequat.</p>
@@ -106,8 +98,8 @@ layout: default
 								<span class="frame-left"></span> <span class="frame-bottom-right"></span>
 							</div>
 							<div class="info">
-								<h2 class="name">Jon Doe</h2>
-								<img src="{{'assets/images/about-title-bg.png'}}" alt="">
+								<h2 class="name">Javi</h2>
+								<img src="{{'/assets/images/about-title-bg.png'| relative_url}}" alt="">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing tempor incididunt ut
 									labore et dolore magna et sed aliqua. Ut enim ad minim veniam, quis nostrud
 									nisi ut aliquip ex ea commodo consequat.</p>
@@ -130,22 +122,19 @@ layout: default
 	<!-- Divider: Call To Action  -->
 	<section class="divider parallax layer-overlay overlay-dark-2" data-stellar-background-ratio="0.5"
 		data-bg-img="http://placehold.it/1920x1285">
-		<div class="container pt-150 pb-150">
-			<!-- Section Content -->
-			<div class="section-content">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center wow fadeInUp animation-delay1"> <img alt=""
-							class="img-responsive centered img-auto" src="{{'assets/images/icon.png'}}">
-						<h1 class="text-white ">We are missing your present. Don’t be late no more.</h1>
-						<a role="button"
-							class="btn btn-lg btn-dark btn-theme-colored mr-30 mt-30 smooth-scroll-to-target"
-							href="#contact">RSVP Now</a>
-						<a class="btn btn-lg btn-dark btn-theme-colored popup-gmaps text-white font-16 mt-30"
-							href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&amp;hl=en&amp;t=v&amp;hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom">Location</a>
+		<a href="/nuestra-historia">
+			<div class="container pt-150 pb-150">
+				<!-- Section Content -->
+				<div class="section-content">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center wow fadeInUp animation-delay1"> <img alt=""
+							class="img-responsive centered img-auto" src="{{'/assets/images/icon.png'| relative_url}}">
+							<h1 class="text-white ">Conoce nuestra historia</h1>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</a>
 	</section>
 
 	<!-- Section: Our Story -->
@@ -154,8 +143,8 @@ layout: default
 			<div class="section-title">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3 text-center pb-30 wow fadeInUp animation-delay1">
-						<h2>Our Love</h2>
-						<img src="{{'assets/images/section-title-after.png'}}" alt="">
+						<h2>Nuestra historia</h2>
+						<img src="{{'/assets/images/section-title-after.png'| relative_url}}" alt="">
 						<p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dignissimos nihil
 								unde dolores qui, adipisci assumenda atque blanditiis omnis nostrum!</em></p>
 					</div>
@@ -169,8 +158,26 @@ layout: default
 						<!-- cd-timeline-img -->
 						<div class="cd-timeline-content no-border bg-lighter">
 							<div class="photo-timeline date-img text-right">
-								<h4><a class="" href="single-post-onepage-nav-light.html">First Meet Each
-										Other</a></h4>
+								<h4><a class="" href="single-post-onepage-nav-light.html">Comienza nuestra historia</a></h4>
+								<h4>05-01-2010</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing tempor incididunt ut
+									labore et dolore magna et sed aliqua. Ut enim ad minim veniam.</p>
+							</div>
+							<div class="discription">
+								<img class="img-circle" alt="" src="http://placehold.it/100x100">
+							</div>
+						</div>
+						<!-- cd-timeline-content -->
+					</div>
+					<!-- cd-timeline-block -->
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img bg-theme-colored"> <i class="fa fa-heart"></i> </div>
+						<!-- cd-timeline-img -->
+						<div class="cd-timeline-content no-border bg-lighter">
+							<div class="photo-timeline date-img text-right">
+								<h4>FOTOS</h4>
+					
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing tempor incididunt ut
 									labore et dolore magna et sed aliqua. Ut enim ad minim veniam.</p>
 								<a class="text-theme-colored" href="single-post-onepage-nav-light.html">Read
@@ -189,11 +196,28 @@ layout: default
 						<!-- cd-timeline-img -->
 						<div class="cd-timeline-content no-border bg-lighter">
 							<div class="photo-timeline date-img text-left">
-								<h4><a class="" href="single-post-onepage-nav-light.html">First Kiss</a></h4>
+								<h4>Graduacion instituto</h4>
+								<h4>2011</h4>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing tempor incididunt ut
 									labore et dolore magna et sed aliqua. Ut enim ad minim veniam.</p>
-								<a class="text-theme-colored" href="single-post-onepage-nav-light.html">Read
-									More</a>
+							</div>
+							<div class="discription">
+								<img class="img-circle" alt="" src="http://placehold.it/100x100">
+							</div>
+						</div>
+						<!-- cd-timeline-content -->
+					</div>
+					<!-- cd-timeline-block -->
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img bg-theme-colored"> <i class="fa fa-heart"></i> </div>
+						<!-- cd-timeline-img -->
+						<div class="cd-timeline-content no-border bg-lighter">
+							<div class="photo-timeline date-img text-left">
+								<h4>Anillos novios</h4>
+								<h4>2012</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing tempor incididunt ut
+									labore et dolore magna et sed aliqua. Ut enim ad minim veniam.</p>
 							</div>
 							<div class="discription">
 								<img class="img-circle" alt="" src="http://placehold.it/100x100">
@@ -208,8 +232,29 @@ layout: default
 						<!-- cd-timeline-img -->
 						<div class="cd-timeline-content no-border bg-lighter">
 							<div class="photo-timeline date-img text-right">
-								<h4><a class="" href="single-post-onepage-nav-light.html">How and Where We
-										Met</a></h4>
+								<h4>FOTOS</h4>
+								
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing tempor incididunt ut
+									labore et dolore magna et sed aliqua. Ut enim ad minim veniam.</p>
+								<a class="text-theme-colored" href="single-post-onepage-nav-light.html">Read
+									More</a>
+							</div>
+							<div class="discription">
+								<img class="img-circle" alt="" src="http://placehold.it/100x100">
+							</div>
+						</div>
+						<!-- cd-timeline-content -->
+					</div>
+					<!-- cd-timeline-block -->
+
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img bg-theme-colored"> <i class="fa fa-heart"></i> </div>
+						<!-- cd-timeline-img -->
+						<div class="cd-timeline-content no-border bg-lighter">
+							<div class="photo-timeline date-img text-right">
+								<h4>Graduación universidad</h4>
+								<h4>2016</h4>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing tempor incididunt ut
 									labore et dolore magna et sed aliqua. Ut enim ad minim veniam.</p>
 								<a class="text-theme-colored" href="single-post-onepage-nav-light.html">Read
@@ -228,8 +273,46 @@ layout: default
 						<!-- cd-timeline-img -->
 						<div class="cd-timeline-content no-border bg-lighter">
 							<div class="photo-timeline date-img text-left">
-								<h4><a class="" href="single-post-onepage-nav-light.html">Our First big
-										Moment</a></h4>
+								<h4>Master</h4>
+								<h4>2017</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing tempor incididunt ut
+									labore et dolore magna et sed aliqua. Ut enim ad minim veniam.</p>
+							</div>
+							<div class="discription">
+								<img class="img-circle" alt="" src="http://placehold.it/100x100">
+							</div>
+						</div>
+						<!-- cd-timeline-content -->
+					</div>
+					<!-- cd-timeline-block -->
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img bg-theme-colored"> <i class="fa fa-heart"></i> </div>
+						<!-- cd-timeline-img -->
+						<div class="cd-timeline-content no-border bg-lighter">
+							<div class="photo-timeline date-img text-right">
+								<h4>Casa</h4>
+								<h4>2018</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing tempor incididunt ut
+									labore et dolore magna et sed aliqua. Ut enim ad minim veniam.</p>
+								<a class="text-theme-colored" href="single-post-onepage-nav-light.html">Read
+									More</a>
+							</div>
+							<div class="discription">
+								<img class="img-circle" alt="" src="http://placehold.it/100x100">
+							</div>
+						</div>
+						<!-- cd-timeline-content -->
+					</div>
+					<!-- cd-timeline-block -->
+					
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img bg-theme-colored"> <i class="fa fa-heart"></i> </div>
+						<!-- cd-timeline-img -->
+						<div class="cd-timeline-content no-border bg-lighter">
+							<div class="photo-timeline date-img text-right">
+								<h4>FOTOS</h4>
+					
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing tempor incididunt ut
 									labore et dolore magna et sed aliqua. Ut enim ad minim veniam.</p>
 								<a class="text-theme-colored" href="single-post-onepage-nav-light.html">Read
@@ -248,8 +331,48 @@ layout: default
 						<!-- cd-timeline-img -->
 						<div class="cd-timeline-content no-border bg-lighter">
 							<div class="photo-timeline date-img text-right">
-								<h4><a class="" href="single-post-onepage-nav-light.html">First Meet Each
-										Other</a></h4>
+								<h4>Pandameia</h4>
+								<h4>2020</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing tempor incididunt ut
+									labore et dolore magna et sed aliqua. Ut enim ad minim veniam.</p>
+								<a class="text-theme-colored" href="single-post-onepage-nav-light.html">Read
+									More</a>
+							</div>
+							<div class="discription">
+								<img class="img-circle" alt="" src="http://placehold.it/100x100">
+							</div>
+						</div>
+						<!-- cd-timeline-content -->
+					</div>
+					<!-- cd-timeline-block -->
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img bg-theme-colored"> <i class="fa fa-heart"></i> </div>
+						<!-- cd-timeline-img -->
+						<div class="cd-timeline-content no-border bg-lighter">
+							<div class="photo-timeline date-img text-right">
+								<h4>Pedida</h4>
+								<h4>05-07-2022</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing tempor incididunt ut
+									labore et dolore magna et sed aliqua. Ut enim ad minim veniam.</p>
+								<a class="text-theme-colored" href="single-post-onepage-nav-light.html">Read
+									More</a>
+							</div>
+							<div class="discription">
+								<img class="img-circle" alt="" src="http://placehold.it/100x100">
+							</div>
+						</div>
+						<!-- cd-timeline-content -->
+					</div>
+					<!-- cd-timeline-block -->
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img bg-theme-colored"> <i class="fa fa-heart"></i> </div>
+						<!-- cd-timeline-img -->
+						<div class="cd-timeline-content no-border bg-lighter">
+							<div class="photo-timeline date-img text-right">
+								<h4>¡Nos vamos de boda!</h4>
+								<h4>13-05-2023</h4>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing tempor incididunt ut
 									labore et dolore magna et sed aliqua. Ut enim ad minim veniam.</p>
 								<a class="text-theme-colored" href="single-post-onepage-nav-light.html">Read
@@ -297,7 +420,7 @@ layout: default
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3 text-center pb-30 wow fadeInUp animation-delay1">
 						<h2>Events</h2>
-						<img src="{{'assets/images/section-title-after.png'}}" alt="">
+						<img src="{{'/assets/images/section-title-after.png'| relative_url}}" alt="">
 						<p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dignissimos nihil
 								unde dolores qui, adipisci assumenda atque blanditiis omnis nostrum!</em></p>
 					</div>
@@ -439,7 +562,7 @@ layout: default
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3 text-center pb-30 wow fadeInUp animation-delay1">
 						<h2>Best People</h2>
-						<img src="{{'assets/images/section-title-after.png'}}" alt="">
+						<img src="{{'/assets/images/section-title-after.png'| relative_url}}" alt="">
 						<p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dignissimos nihil
 								unde dolores qui, adipisci assumenda atque blanditiis omnis nostrum!</em></p>
 					</div>
@@ -630,7 +753,7 @@ layout: default
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3 text-center pb-30">
 						<h2>Blog</h2>
-						<img src="{{'assets/images/section-title-after.png'}}" alt="">
+						<img src="{{'/assets/images/section-title-after.png'| relative_url}}" alt="">
 						<p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dignissimos nihil
 								unde dolores qui, adipisci assumenda atque blanditiis omnis nostrum!</em></p>
 					</div>

@@ -840,12 +840,12 @@ var THEMEMASCOT = THEMEMASCOT || {};
                 THEMEMASCOT.widget.TM_pieChart();
                 THEMEMASCOT.widget.TM_progressBar();
                 THEMEMASCOT.widget.TM_funfact();
-                THEMEMASCOT.widget.TM_instagramFeed();
-                THEMEMASCOT.widget.TM_jflickrfeed();
+                // THEMEMASCOT.widget.TM_instagramFeed();
+                // THEMEMASCOT.widget.TM_jflickrfeed();
                 THEMEMASCOT.widget.TM_accordion_toggles();
                 THEMEMASCOT.widget.TM_tooltip();
-                THEMEMASCOT.widget.TM_twittie();
-                //THEMEMASCOT.widget.TM_countDownTimer();
+                // THEMEMASCOT.widget.TM_twittie();
+                THEMEMASCOT.widget.TM_countDownTimer();
             }, 0);
 
         },
@@ -1067,10 +1067,10 @@ var THEMEMASCOT = THEMEMASCOT || {};
             $clock.countdown(endingdate, function(event) {
                 var countdown_text = '' +
                     '<ul class="countdown-timer">' +
-                    '<li>%D <span>Days</span></li>' +
-                    '<li>%H <span>Hours</span></li>' +
-                    '<li>%M <span>Minutes</span></li>' +
-                    '<li>%S <span>Seconds</span></li>' +
+                    '<li>%D <span>Días</span></li>' +
+                    '<li>%H <span>Horas</span></li>' +
+                    '<li>%M <span>Minutos</span></li>' +
+                    '<li>%S <span>Segundos</span></li>' +
                     '</ul>';
                 $(this).html(event.strftime(countdown_text));
             });
