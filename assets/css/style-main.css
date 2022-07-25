@@ -9,8 +9,9 @@ Primary use:    Attorney & Lawyer Business Template
 Author:         ThemeMascot
 URL:            http://themeforest.net/user/ThemeMascot
 -------------------------------------------------------------------*/
-@import "../css/font-awesome.min.css";
-@import "../css/font-awesome-animation.min.css";
+/* @import "../css/font-awesome.min.css"; */
+/* @import "../css/font-awesome-animation.min.css"; */
+@import "../fonts/fontawesome-6.1.1/css/all.min.css";
 @import "../css/pe-icon-7-stroke.css";
 @import "../css/elegant-icons.css";
 @import "../css/stroke-gap-icons.css";
