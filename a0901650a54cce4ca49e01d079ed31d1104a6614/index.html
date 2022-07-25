@@ -234,74 +234,32 @@ layout: default
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3 text-center pb-30 wow fadeInUp animation-delay1">
 						<h2>Blog</h2>
-						<img src="images/section-title-after.png" alt="">
-						<p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dignissimos nihil unde dolores
-								qui, adipisci assumenda atque blanditiis omnis nostrum!</em></p>
+						<img src="{{'assets/images/section-title-after.png' | relative_url}}" alt="">
+						<p><em>Los días mágicos antes y después de la boda los publicaremos aquí para que podáis seguir y vivir con nosotros los mejores momentos</em></p>
 					</div>
 				</div>
 			</div>
 			<div class="section-content">
 				<div class="row">
+					{% for post in site.posts limit:6 %}
 					<div class="col-sm-6 col-md-4 col-lg-4 wow fadeInUp animation-delay1">
 						<article class="post clearfix maxwidth600 mb-30">
 							<div class="entry-header">
-								<div class="post-thumb thumb"> <img src="https://api.lorem.space/image/house?w=900&h=500" alt=""
+								<div class="post-thumb thumb"> <img src="{{post.thumbnail | relative_url }}" alt=""
 										class="img-responsive img-fullwidth"> </div>
 							</div>
 							<div class="entry-content border-1px p-20">
-								<h5 class="entry-title mt-0 pt-0"><a href="#">Wedding ceremony party</a></h5>
-								<p class="text-left mb-20 mt-15 font-13">Lorem ipsum dolor sit amet, consectetur adipiscing
-									elit, sed do eiusmod tempor incididunt ut labore.</p>
-								<a class="btn btn-dark btn-theme-colored btn-xs btn-flat pull-left mt-0" href="#">Read
-									more</a>
+								<h5 class="entry-title mt-0 pt-0"><a href="{{post.url | relative_url}}">{{post.title}}</a></h5>
+								<p class="text-left mb-20 mt-15 font-13">{{ post.excerpt }}</p>
+								<a class="btn btn-dark btn-theme-colored btn-xs btn-flat pull-left mt-0" href="{{post.url | relative_url}}">Leer más</a>
 								<ul class="list-inline entry-date pull-right font-12 mt-5">
-									<li><a class="text-theme-colored" href="#">Admin |</a></li>
-									<li><span class="text-theme-colored">Nov 13, 2015</span></li>
+									<li><span class="text-theme-colored">{{post.date | date: "%d-%m-%Y - %H:%M"}}</span></li>
 								</ul>
 								<div class="clearfix"></div>
 							</div>
 						</article>
 					</div>
-					<div class="col-sm-6 col-md-4 col-lg-4 wow fadeInUp animation-delay2">
-						<article class="post clearfix maxwidth600 mb-30">
-							<div class="entry-header">
-								<div class="post-thumb thumb"> <img src="https://api.lorem.space/image/house?w=900&h=500" alt=""
-										class="img-responsive img-fullwidth"> </div>
-							</div>
-							<div class="entry-content border-1px p-20">
-								<h5 class="entry-title mt-0 pt-0"><a href="#">Wedding ceremony party</a></h5>
-								<p class="text-left mb-20 mt-15 font-13">Lorem ipsum dolor sit amet, consectetur adipiscing
-									elit, sed do eiusmod tempor incididunt ut labore.</p>
-								<a class="btn btn-dark btn-theme-colored btn-xs btn-flat pull-left mt-0" href="#">Read
-									more</a>
-								<ul class="list-inline entry-date pull-right font-12 mt-5">
-									<li><a class="text-theme-colored" href="#">Admin |</a></li>
-									<li><span class="text-theme-colored">Nov 13, 2015</span></li>
-								</ul>
-								<div class="clearfix"></div>
-							</div>
-						</article>
-					</div>
-					<div class="col-sm-6 col-md-4 col-lg-4 wow fadeInUp animation-delay3">
-						<article class="post clearfix maxwidth600 mb-30">
-							<div class="entry-header">
-								<div class="post-thumb thumb"> <img src="https://api.lorem.space/image/house?w=900&h=500" alt=""
-										class="img-responsive img-fullwidth"> </div>
-							</div>
-							<div class="entry-content border-1px p-20">
-								<h5 class="entry-title mt-0 pt-0"><a href="#">Wedding ceremony party</a></h5>
-								<p class="text-left mb-20 mt-15 font-13">Lorem ipsum dolor sit amet, consectetur adipiscing
-									elit, sed do eiusmod tempor incididunt ut labore.</p>
-								<a class="btn btn-dark btn-theme-colored btn-xs btn-flat pull-left mt-0" href="#">Read
-									more</a>
-								<ul class="list-inline entry-date pull-right font-12 mt-5">
-									<li><a class="text-theme-colored" href="#">Admin |</a></li>
-									<li><span class="text-theme-colored">Nov 13, 2015</span></li>
-								</ul>
-								<div class="clearfix"></div>
-							</div>
-						</article>
-					</div>
+					{% endfor %}
 				</div>
 			</div>
 	

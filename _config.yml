@@ -44,8 +44,16 @@ defaults:
       path: ""
     values:
       layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      isPost: true
 
 collections:
   a0901650a54cce4ca49e01d079ed31d1104a6614:
     output: true
     permalink: /:collection/:name
+  posts:
+    output: true
+    permalink: /blog/:categories/:year/:month/:day/:title

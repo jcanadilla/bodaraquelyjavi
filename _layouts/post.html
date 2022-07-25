@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es">
+
+{% include head.html %}
+
+<body class="">
+	<div id="wrapper" class="clearfix">
+		<div id="preloader">
+			<div id="spinner">
+				<img src="{{'/assets/images/preloaders/1.gif' | relative_url }}" alt="">
+			</div>
+		</div>
+
+		<!-- Start main menu -->
+		{% include menu.html %}
+		<!-- End main menu -->
+
+		<!-- Start main-content -->
+		<div class="main-content">
+			<!-- Section: inner-header -->
+			<section class="inner-header divider parallax layer-overlay overlay-dark-5"
+				data-bg-img="{{page.parallax | relative_url }}"
+				data-stellar-background-ratio="0.5"
+				>
+				<!-- Tamaño imagen w=1920&h=1284 -->
+				<div class="container pt-120 pb-50">
+					<!-- Section Content -->
+					<div class="section-content pt-100">
+						<div class="row">
+							<div class="col-md-12">
+								<h3 class="title text-white">{{page.title}}</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+			<!-- Section: Blog -->
+			<section>
+				<div class="container mt-30 mb-30 pt-30 pb-30">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="blog-posts single-post">
+								<article class="post clearfix mb-0">
+									<div class="entry-header">
+										<!-- Tamaño imagen: w=730&h=400 -->
+										<div class="post-thumb thumb"> <img src="{{page.mainImage | relative_url }}" alt=""
+												class="img-responsive img-fullwidth"> </div>
+									</div>
+									<div class="entry-title pt-0">
+										<h4 class="font-Playfair"><a href="#">{{page.title}}</a></h4>
+									</div>
+									<div class="entry-meta">
+										<ul class="list-inline">
+											<li>Fecha de publicación: <span class="text-theme-colored">{{page.date | date: "%d-%m-%Y - %H:%M"}}</span></li>
+										</ul>
+									</div>
+									<div class="entry-content mt-10">
+										{{content}}
+									</div>
+								</article>
+								<div class="tagline p-0 pt-20 mt-5">
+									<div class="row">
+										<div class="col-md-8">
+											<div class="tags">
+												<p class="mb-0"><i class="fa fa-hashtag text-theme-colored"></i> <span></span>
+													{{ page.tags | join: ", " }}
+												</p>
+
+											</div>
+										</div>
+									</div>
+									<div class="row mt-30">
+										{% if page.previous != nil and page.next != nil%}
+										{% assign colSize = 6 %}
+										{% else %}
+										{%assign colSize = 12%}
+										{% endif %}
+
+										{% if page.previous != nil %}
+										<div class="col-md-{{colSize}}">
+											<a href="{{page.previous.url | relative_url}}"><i class="fa fa-arrow-left text-theme-colored"></i> <span></span>
+												Post anterior: {{page.previous.title}}
+											</a>
+										</div>
+										{% endif %}
+										{% if page.next != nil %}
+										<div class="col-md-{{colSize}} text-right">
+											<a href="{{page.next.url | relative_url}}"><span></span>
+												Siguiente post: {{page.next.title}}
+												<i class="fa fa-arrow-right text-theme-colored"></i>
+											</a>
+										</div>
+										{% endif %}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- end main-content -->
+
+		{% include footer.html %}
+
+		<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+	</div>
+	<!-- end wrapper -->
+
+
+	<!-- Footer Scripts -->
+	<!-- JS | Custom script for all pages -->
+	<script src="{{'/assets/js/custom.js' | relative_url }}"></script>
+</body>
+
+</html>
