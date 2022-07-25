@@ -18,15 +18,13 @@
 									<li><a href="{{site.baseurl}}/{{site.basefolder}}/novios/nuestra-historia">Nuestra historia</a></li>
 								</ul>
 							</li>
-							<li><a href="#">Sobre la boda</a>
+							<li {% if page.title == "programa" or page.title == "luna-miel" %} class="active" {% endif %}>
+								<a href="#">Sobre la boda</a>
 								<ul class="dropdown">
-									<li><a href="page-program-of-the-day.html">Programa del día</a></li>
-									<li><a href="page-wedding-location.html">Ceremonia</a></li>
-									<li><a href="page-accomodation.html">Cena</a></li>
-									<li><a href="page-bridesmaid.html">Viaje de novios</a></li>
+									<li><a href="{{site.baseurl}}/{{site.basefolder}}/boda/programa.html">Programa del día</a></li>
+									<li><a href="{{site.baseurl}}/{{site.basefolder}}/boda/luna-miel.html">Luna de miel</a></li>
 								</ul>
 							</li>
-
 							<li {% if page.title == "blog" %} class="active" {% endif %}><a href="#">Blog</a>
 							</li>
 						</ul>
