@@ -3,19 +3,27 @@ title: nuestra-historia
 layout: default
 ---
 
+<script>
+    $('#video').vide("{{'/assets/video/ocean'| relative_url}}");
+</script>
+
+<section id="video" class="divider no-bg" data-vide-bg="{{'/assets/video/ocean'| relative_url}}" data-vide-options="loop: true, muted: true, position: 0% 0%">
+    <div class="container pt-200 pb-50">
+        <!-- Section Content -->
+        <div class="section-content pt-100">
+            <div class="row"> 
+            <div class="col-md-12">
+                <h3 class="title text-white">Nuestra historia</h3>
+                <h4 class="text-white">Comenzó hace 13 años</h4>
+            </div>
+            </div>
+        </div>
+        </div>
+  </section>
+
 <!-- Section: Our Story -->
 <section>
     <div class="container pb-80">
-        <div class="section-title">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center pb-30 wow fadeInUp animation-delay1">
-                    <h2>Nuestra historia</h2>
-                    <img src="{{'/assets/images/section-title-after.png'| relative_url}}" alt="">
-                    <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dignissimos nihil
-                            unde dolores qui, adipisci assumenda atque blanditiis omnis nostrum!</em></p>
-                </div>
-            </div>
-        </div>
         <!-- Section Content -->
         <div class="section-content">
             <div class="cd-container cd-timeline">
@@ -24,7 +32,7 @@ layout: default
                     <!-- cd-timeline-img -->
                     <div class="cd-timeline-content no-border bg-lighter">
                         <div class="photo-timeline date-img text-left">
-                            <h4><a class="" href="single-post-onepage-nav-light.html">Comienza nuestra historia</a></h4>
+                            <h4><a class="" href="single-post-onepage-nav-light.html">Empezamos a salir</a></h4>
                             <h4>05-01-2010</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing tempor incididunt ut
                                 labore et dolore magna et sed aliqua. Ut enim ad minim veniam.</p>
