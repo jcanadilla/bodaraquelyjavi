@@ -7,11 +7,11 @@
 				<nav>
 					<div id="menuzord-right" class="menuzord red no-bg"> <a
 							class="menuzord-brand pull-left flip font-great-vibes text-theme-colored font-32"
-							href="#">Raquel &nbsp;<i class="fa fa-heart font-25"></i>
+							href="{{site.baseurl}}/{{site.basefolder}}/">Raquel &nbsp;<i class="fa fa-heart font-25"></i>
 							Javi</a>
 						<ul class="menuzord-menu">
-							<li {% if page.title == "home" %} class="active" {% endif %}><a href="#home">Inicio</a></li>
-							<li><a href="#">Sobre los novios</a>
+							<li {% if page.title == "home" %} class="active" {% endif %}><a href="{{site.baseurl}}/{{site.basefolder}}/">Inicio</a></li>
+							<li {% if page.title == "novia" or page.title == "novio" or page.title == "nuestra-historia" %} class="active" {% endif %}><a href="#">Sobre los novios</a>
 								<ul class="dropdown">
 									<li><a href="{{site.baseurl}}/{{site.basefolder}}/novios/novia.html">La novia</a></li>
 									<li><a href="{{site.baseurl}}/{{site.basefolder}}/novios/novio.html">El novio</a></li>
@@ -27,7 +27,7 @@
 								</ul>
 							</li>
 
-							<li><a href="#">Blog</a>
+							<li {% if page.title == "blog" %} class="active" {% endif %}><a href="#">Blog</a>
 							</li>
 						</ul>
 					</div>
