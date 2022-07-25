@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta name="description" content="{{site.description}}" />
-	<meta name="keywords" content="building,business,construction,cleaning,transport,workshop" />
+	<meta name="keywords" content="{{site.keywords}}" />
 	<meta name="author" content="{{site.author}}" />
 
 	<!-- Page Title -->
@@ -40,7 +40,7 @@
 	<!-- CSS | Responsive media queries -->
 	<link href="{{'/assets/css/responsive.css' | relative_url }}" rel="stylesheet" type="text/css">
 	<!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
-	<!-- <link href="{{'/assets/css/style.css' | relative_url }}" rel="stylesheet" type="text/css"> -->
+	<link href="{{'/assets/css/style.css' | relative_url }}" rel="stylesheet" type="text/css">
 
 	<!-- external javascripts -->
 	<script src="{{'/assets/js/jquery-2.2.0.min.js' | relative_url }}"></script>
@@ -58,8 +58,15 @@
 </head>
 
 <body class="has-side-panel side-panel-right fullwidth-page side-push-panel">
-	<div class="body-overlay"></div>
+	<div class="body-overlay">
+	</div>
 	<div id="wrapper" class="clearfix">
+		
+		<div id="preloader">
+			<div id="spinner">
+				<img src="{{'/assets/images/preloaders/1.gif' | relative_url }}" alt="">
+			</div>
+		</div>
 
 		<!-- Start main menu -->
 		{% include menu.html %}

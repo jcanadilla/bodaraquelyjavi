@@ -26,6 +26,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   parte de nuestra historia y deseamos que disfrutéis con nosotros de este día tan especial
 baseurl: "/bodaraquelyjavi" # the subpath of your site, e.g. /blog
 url: "https://jcanadilla.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+basefolder: a0901650a54cce4ca49e01d079ed31d1104a6614
+keywords: boda,javi,raquel,nos casamos,amor
 
 show_dir_listing: false
 

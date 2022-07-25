@@ -59,7 +59,6 @@ var THEMEMASCOT = THEMEMASCOT || {};
         init: function() {
             THEMEMASCOT.initialize.TM_datePicker();
             THEMEMASCOT.initialize.TM_onLoadModal();
-            THEMEMASCOT.initialize.TM_demoSwitcher();
             THEMEMASCOT.initialize.TM_platformDetect();
             THEMEMASCOT.initialize.TM_customDataAttributes();
             THEMEMASCOT.initialize.TM_parallaxBgInit();
@@ -152,19 +151,6 @@ var THEMEMASCOT = THEMEMASCOT || {};
             }
         },
 
-        /* ---------------------------------------------------------------------- */
-        /* ------------------------------ Hash Forwarding  ---------------------- */
-        /* ---------------------------------------------------------------------- */
-        TM_demoSwitcher: function() {
-            var showSwitcher = true;
-            if( showSwitcher ) {
-                $.ajax({
-                    url: "color-switcher/style-switcher.html",
-                    success: function (data) { $('body').append(data); },
-                    dataType: 'html'
-                });
-            }
-        },
 
         /* ---------------------------------------------------------------------- */
         /* ------------------------------ preloader  ---------------------------- */
