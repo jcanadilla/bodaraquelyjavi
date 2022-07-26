@@ -35,3 +35,5 @@ gem "wdm", ">= 0.1.1"
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 gem "jekyll-less"
+
+gem "jekyll-paginate", "~> 1.1"

@@ -29,6 +29,9 @@ url: "https://jcanadilla.github.io" # the base hostname & protocol for your site
 basefolder: a0901650a54cce4ca49e01d079ed31d1104a6614
 keywords: boda,javi,raquel,nos casamos,amor
 
+paginate: 6
+paginate_path: "a0901650a54cce4ca49e01d079ed31d1104a6614/blog/page:num/"
+
 show_dir_listing: false
 
 host: 0.0.0.0
@@ -38,6 +41,7 @@ port: 4000
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 defaults:
   - scope:
@@ -56,4 +60,4 @@ collections:
     permalink: /:collection/:name
   posts:
     output: true
-    permalink: /blog/:categories/:year/:month/:day/:title
+    permalink: /a0901650a54cce4ca49e01d079ed31d1104a6614/blog/:categories/:year/:month/:day/:title
