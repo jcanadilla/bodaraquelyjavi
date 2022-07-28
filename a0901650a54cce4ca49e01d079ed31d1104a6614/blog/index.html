@@ -1,9 +1,11 @@
 ---
-title: blog
+title: Últimas novedades
+menu: blog
 layout: default
 ---
 
-<section class="inner-header divider parallax layer-overlay overlay-dark-5" data-bg-img="{{'/assets/images/unsplash/mr-mrs.jpg' | relative_url}}">
+<section class="inner-header divider parallax layer-overlay overlay-dark-5"
+	data-bg-img="{{'/assets/images/unsplash/fondo-luz.jpg' | relative_url}}">
 	<div class="container pt-120 pb-50">
 		<!-- Section Content -->
 		<div class="section-content pt-100">
@@ -31,37 +33,41 @@ layout: default
 						<h5 class="entry-title mt-0 pt-0"><a href="{{post.url | relative_url}}">{{post.title}}</a></h5>
 						<div class="entry-meta">
 							<ul class="list-inline entry-date font-12 mt-5">
-								<li><span class="text-theme-colored">{{post.date | date: "%d-%m-%Y - %H:%M"}}</span></li>
+								<li><span class="text-theme-colored">{{post.date | date: "%d-%m-%Y - %H:%M"}}</span>
+								</li>
 							</ul>
 						</div>
 						<p class="text-left mb-20 mt-15 font-13">{{ post.excerpt }}</p>
-						<a class="btn btn-dark btn-theme-colored btn-sm btn-flat pull-left mt-0" href="{{post.url | relative_url}}">Leer más</a>
+						<a class="btn btn-dark btn-theme-colored btn-sm btn-flat pull-left mt-0"
+							href="{{post.url | relative_url}}">Leer más</a>
 						<div class="clearfix"></div>
 					</div>
 				</article>
 			</div>
 			{% endfor %}
 		</div>
-		
+
 		{% if paginator.total_pages > 1 %}
 		<div class="row">
 			<div class="col-sm-12">
 				<nav>
 					<ul class="pagination theme-colored xs-pull-center m-0">
 						{% if paginator.previous_page %}
-						<li> <a href="{{paginator.previous_page_path | relative_url}}" aria-label="Anterior"> <span aria-hidden="true">«</span> </a> </li>
+						<li> <a href="{{paginator.previous_page_path | relative_url}}" aria-label="Anterior"> <span
+									aria-hidden="true">«</span> </a> </li>
 						{% endif %}
 						{% for page in (1..paginator.total_pages) %}
-							{% if page == paginator.page %}
-								<li class="active"><a>{{page}}</a></li>
-							{% elsif page == 1 %}
-								<li><a href="{{site.baseurl}}/{{site.basefolder}}/blog">{{page}}</a></li>
-							{% else %}
-							<li><a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{page}}</a></li>
-							{% endif %}
+						{% if page == paginator.page %}
+						<li class="active"><a>{{page}}</a></li>
+						{% elsif page == 1 %}
+						<li><a href="{{site.baseurl}}/{{site.basefolder}}/blog">{{page}}</a></li>
+						{% else %}
+						<li><a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{page}}</a></li>
+						{% endif %}
 						{% endfor %}
 						{% if paginator.next_page %}
-						<li> <a href="{{paginator.next_page_path | relative_url}}" aria-label="Siguiente"> <span aria-hidden="true">»</span> </a> </li>
+						<li> <a href="{{paginator.next_page_path | relative_url}}" aria-label="Siguiente"> <span
+									aria-hidden="true">»</span> </a> </li>
 						{% endif %}
 					</ul>
 				</nav>

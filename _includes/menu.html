@@ -10,9 +10,9 @@
 								class="fa fa-heart font-25"></i>
 							Javi</a>
 						<ul class="menuzord-menu">
-							<li {% if page.title=="home" %} class="active" {% endif %}><a
+							<li {% if page.menu=="home" %} class="active" {% endif %}><a
 									href="{{site.baseurl}}/{{site.basefolder}}/">Inicio</a></li>
-							<li {% if page.title=="novia" or page.title=="novio" or page.title=="nuestra-historia" %}
+							<li {% if page.menu=="novia" or page.menu=="novio" or page.menu=="nuestra-historia" %}
 								class="active" {% endif %}><a href="#">Sobre los novios</a>
 								<ul class="dropdown">
 									<li><a href="{{site.baseurl}}/{{site.basefolder}}/novios/novia.html">La novia</a>
@@ -23,7 +23,7 @@
 											historia</a></li>
 								</ul>
 							</li>
-							<li {% if page.title=="programa" or page.title=="luna-miel" %} class="active" {% endif %}>
+							<li {% if page.menu=="programa" or page.menu=="luna-miel" %} class="active" {% endif %}>
 								<a href="#">Sobre la boda</a>
 								<ul class="dropdown">
 									<li><a href="{{site.baseurl}}/{{site.basefolder}}/boda/programa.html">Programa</a>
@@ -32,7 +32,7 @@
 											miel</a></li>
 								</ul>
 							</li>
-							<li {% if page.title=="blog" or page.isPost %} class="active" {% endif %}><a
+							<li {% if page.menu=="blog" or page.isPost %} class="active" {% endif %}><a
 									href="{{site.baseurl}}/{{site.basefolder}}/blog">Blog</a>
 							</li>
 						</ul>
