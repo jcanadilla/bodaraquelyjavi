@@ -306,37 +306,54 @@ layout: default
 			<div class="section-content">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-6">
-						<h2 class="mt-0 mb-30 text-white">Are you attending?</h2>
-						<form id="rsvp_form" name="rsvp_form" class="form-transparent form-text-white" method="post"
-							action="includes/rsvp.php">
+						<h2 class="mt-0 mb-30 text-white">¿Contamos contigo?</h2>
+						<form id="mailchimp-subscription-form1" class="form-transparent form-text-white" method="post">
 							<div class="row">
 								<div class="col-sm-12">
 									<div class="form-group">
+										<input type="text" placeholder="Nombre" id="NAME" name="NAME"
+											required class="form-control">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<input type="text" placeholder="Email" id="EMAIL" name="EMAIL"
+											class="form-control" required="">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<input type="text" placeholder="Teléfono" id="PHONE" name="PHONE"
+										required="" class="form-control">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
 										<div class="styled-select">
-											<select id="form_category" name="form_category" class="form-control">
-												<option value="All Events">All Events</option>
-												<option value="Ceremony">Ceremony</option>
-												<option value="Reception">Reception</option>
+											<select id="EVENT" name="EVENT" class="form-control">
+												<option value="todos">Ceremonia + Cena</option>
+												<option value="ceremonia">Ceremonia</option>
+												<option value="cena">Cena</option>
+												<option value="ninguno">No asistiré</option>
 											</select>
 										</div>
 									</div>
 								</div>
 								<div class="col-sm-12">
 									<div class="form-group">
-										<input type="text" placeholder="Enter Name" id="form_name" name="form_name"
-											required="" class="form-control">
+										<div class="styled-select">
+											<select id="SPEC" name="SPEC" class="form-control">
+												<option value="ninguna">Ninguna</option>
+												<option value="vegano">Vegano</option>
+												<option value="alergia">Alergia</option>
+											</select>
+										</div>
 									</div>
 								</div>
 								<div class="col-sm-12">
 									<div class="form-group">
-										<input type="text" placeholder="Email" id="form_email" name="form_email"
-											class="form-control" required="">
-									</div>
-								</div>
-								<div class="col-sm-12">
-									<div class="form-group">
-										<textarea id="form_message" name="form_message" class="form-control required"
-											rows="5" placeholder="Enter Message"></textarea>
+										<textarea id="MSG" name="MSG" class="form-control required"
+											rows="5" placeholder="Dejar comentarios"></textarea>
 									</div>
 								</div>
 								<div class="col-sm-12">
@@ -345,34 +362,31 @@ layout: default
 											type="hidden" value="">
 										<button type="submit"
 											class="btn btn-colored btn-theme-colored btn-lg btn-submit"
-											data-loading-text="Please wait...">Send Message</button>
+											data-loading-text="Please wait...">Enviar</button>
 									</div>
 								</div>
 							</div>
-						</form>
+						  </form>
 						<!-- rsvp Form Validation-->
 						<script type="text/javascript">
-							$("#rsvp_form").validate({
-								submitHandler: function (form) {
-									var form_btn = $(form).find('button[type="submit"]');
-									var form_result_div = '#form-result';
-									$(form_result_div).remove();
-									form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
-									var form_btn_old_msg = form_btn.html();
-									form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
-									$(form).ajaxSubmit({
-										dataType: 'json',
-										success: function (data) {
-											if (data.status == 'true') {
-												$(form).find('.form-control').val('');
-											}
-											form_btn.prop('disabled', false).html(form_btn_old_msg);
-											$(form_result_div).html(data.message).fadeIn('slow');
-											setTimeout(function () { $(form_result_div).fadeOut('slow') }, 6000);
-										}
-									});
-								}
+							$('#mailchimp-subscription-form1').ajaxChimp({
+								callback: mailChimpCallBack,
+								url: 'https://hotmail.us14.list-manage.com/subscribe/post?u=e654d01638ee86592d5ca8644&amp;id=b51f714a51'
 							});
+						  
+							function mailChimpCallBack(resp) {
+								// Hide any previous response text
+								var $mailchimpform = $('#mailchimp-subscription-form1');
+								var $response = '';
+								$mailchimpform.children(".alert").remove();
+								console.log(resp);
+								if (resp.result === 'success') {
+									$response = '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>¡Gracias! <i class="fa fa-face-kiss-wink-heart fa-beat"></i> </div>';
+								} else if (resp.result === 'error') {
+									$response = '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
+								}
+								$mailchimpform.prepend($response);
+							}
 						</script>
 						<!-- rsvp Form Ends -->
 					</div>
