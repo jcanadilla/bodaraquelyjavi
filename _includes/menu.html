@@ -1,31 +1,39 @@
-
 <!-- Header -->
 <header id="header" class="header navbar-scrolltofixed bg-lighter">
 	<div class="header-nav">
 		<div class="header-nav-wrapper">
 			<div class="container">
 				<nav>
-					<div id="menuzord-right" class="menuzord default no-bg"> <a
-							class="menuzord-brand pull-left flip font-great-vibes text-theme-colored font-32"
-							href="{{site.baseurl}}/{{site.basefolder}}/">Raquel &nbsp;<i class="fa fa-heart font-25"></i>
+					<div id="menuzord-right" class="menuzord default no-bg">
+						<a class="menuzord-brand pull-left flip font-great-vibes text-theme-colored font-32"
+							href="{{site.baseurl}}/{{site.basefolder}}/">Raquel &nbsp;<i
+								class="fa fa-heart font-25"></i>
 							Javi</a>
 						<ul class="menuzord-menu">
-							<li {% if page.title == "home" %} class="active" {% endif %}><a href="{{site.baseurl}}/{{site.basefolder}}/">Inicio</a></li>
-							<li {% if page.title == "novia" or page.title == "novio" or page.title == "nuestra-historia" %} class="active" {% endif %}><a href="#">Sobre los novios</a>
+							<li {% if page.title=="home" %} class="active" {% endif %}><a
+									href="{{site.baseurl}}/{{site.basefolder}}/">Inicio</a></li>
+							<li {% if page.title=="novia" or page.title=="novio" or page.title=="nuestra-historia" %}
+								class="active" {% endif %}><a href="#">Sobre los novios</a>
 								<ul class="dropdown">
-									<li><a href="{{site.baseurl}}/{{site.basefolder}}/novios/novia.html">La novia</a></li>
-									<li><a href="{{site.baseurl}}/{{site.basefolder}}/novios/novio.html">El novio</a></li>
-									<li><a href="{{site.baseurl}}/{{site.basefolder}}/novios/nuestra-historia">Nuestra historia</a></li>
+									<li><a href="{{site.baseurl}}/{{site.basefolder}}/novios/novia.html">La novia</a>
+									</li>
+									<li><a href="{{site.baseurl}}/{{site.basefolder}}/novios/novio.html">El novio</a>
+									</li>
+									<li><a href="{{site.baseurl}}/{{site.basefolder}}/novios/nuestra-historia">Nuestra
+											historia</a></li>
 								</ul>
 							</li>
-							<li {% if page.title == "programa" or page.title == "luna-miel" %} class="active" {% endif %}>
+							<li {% if page.title=="programa" or page.title=="luna-miel" %} class="active" {% endif %}>
 								<a href="#">Sobre la boda</a>
 								<ul class="dropdown">
-									<li><a href="{{site.baseurl}}/{{site.basefolder}}/boda/programa.html">Programa</a></li>
-									<li><a href="{{site.baseurl}}/{{site.basefolder}}/boda/luna-miel.html">Luna de miel</a></li>
+									<li><a href="{{site.baseurl}}/{{site.basefolder}}/boda/programa.html">Programa</a>
+									</li>
+									<li><a href="{{site.baseurl}}/{{site.basefolder}}/boda/luna-miel.html">Luna de
+											miel</a></li>
 								</ul>
 							</li>
-							<li {% if page.title == "blog" or page.isPost %} class="active" {% endif %}><a href="{{site.baseurl}}/{{site.basefolder}}/blog">Blog</a>
+							<li {% if page.title=="blog" or page.isPost %} class="active" {% endif %}><a
+									href="{{site.baseurl}}/{{site.basefolder}}/blog">Blog</a>
 							</li>
 						</ul>
 					</div>
