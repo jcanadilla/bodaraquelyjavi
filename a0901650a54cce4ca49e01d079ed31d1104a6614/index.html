@@ -362,7 +362,7 @@ layout: default
 											type="hidden" value="">
 										<button type="submit"
 											class="btn btn-colored btn-theme-colored btn-lg btn-submit"
-											data-loading-text="Please wait...">Enviar</button>
+											data-loading-text="Espera..."><i class="fa-regular fa-paper-plane"></i> Enviar</button>
 									</div>
 								</div>
 							</div>
@@ -381,7 +381,7 @@ layout: default
 								$mailchimpform.children(".alert").remove();
 								console.log(resp);
 								if (resp.result === 'success') {
-									$response = '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>¡Gracias! <i class="fa fa-face-kiss-wink-heart fa-beat"></i> </div>';
+									$response = '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>¡Gracias! <i class="fa-regular fa-face-kiss-wink-heart fa-beat-fade"></i> </div>';
 								} else if (resp.result === 'error') {
 									$response = '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
 								}
