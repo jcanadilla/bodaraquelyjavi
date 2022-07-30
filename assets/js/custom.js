@@ -69,7 +69,7 @@ var THEMEMASCOT = THEMEMASCOT || {};
             THEMEMASCOT.initialize.TM_wow();
             THEMEMASCOT.initialize.TM_fitVids();
             THEMEMASCOT.initialize.TM_YTPlayer();
-            THEMEMASCOT.initialize.TM_equalHeightDivs();
+			THEMEMASCOT.initialize.TM_equalHeightDivs();
         },
 
 
@@ -561,7 +561,68 @@ var THEMEMASCOT = THEMEMASCOT || {};
                 $(this).children('div').css('min-height', $(this).css('min-height'));
             });
 
-        }
+		},
+		
+		/* ---------------------------------------------------------------------- */
+        /* ---------------------------- RandomLovePhrase ---------------------------- */
+        /* ---------------------------------------------------------------------- */
+		RandomLovePhrase: function () {
+			const phrases = [
+				{
+					phrase: "“Te quiero, Te quise desde el primer momento en que te vi. Te quise incluso antes de verte por primera vez”",
+					author: "Un lugar en el sol",
+				},
+				{
+					phrase: "“Amar no es mirarse el uno al otro; es mirar juntos es la misma dirección”",
+					author: "Antonie de Saint-Exupéry",
+				},
+				{
+					phrase: "“Andábamos sin buscarnos, pero sabiendo que andábamos para encontrarnos”",
+					author: "Julio Cortázar",
+				},
+				{
+					phrase: "“La vida no es la cantidad de veces que respiras, sino los momentos que te dejan sin aliento”",
+					author: "Hitch",
+				},
+				{
+					phrase: "“No importa lo que pase mañana o el resto de mi vida, ahora soy feliz porque te quiero”",
+					author: "Atrapado en el tiempo",
+				},
+				{
+					phrase: "“Amar a alguien es una cosa. Que alguien te ame es otra. Pero que te ame la misma persona que amas, lo es todo”",
+					author: "Paulo Coelho",
+				},
+				{
+					phrase: "“Yo no te pido que me bajes una estrella azul, solo te pido que mi espacio lo llenes con tu luz”",
+					author: "Mario Benedetti",
+				},
+				{
+					phrase: "“Estábamos, estamos, estaremos juntos. A pedazos, a ratos, a párpados, a sueños”",
+					author: "Mario Benedetti",
+				},
+				{
+					phrase: "“Si lo ven por ahí, díganle que le quiero volver a ver. Es fácil saber quién es, lleva un pedacito de mí en sus ojos”",
+					author: "Poeta Prohibido",
+				},
+				{
+					phrase: "“Para sacar el máximo partido a la alegría hay que tener con quien compartirla”",
+					author: "Mark Twain",
+				},
+			];
+
+
+			function generateRandomInt(min,max){
+				return Math.floor((Math.random() * (max-min)) +min);
+			}
+
+			const randomNumber = generateRandomInt(0, phrases.length);
+			const lovePhrase = phrases[randomNumber];
+
+			$("#frase-amor").text(lovePhrase.phrase);
+			$("#autor-frase-amor").text(lovePhrase.author);
+
+			console.log('FRASE DE AMOR CAMBIADA');
+		}
 
     };
 
@@ -1980,7 +2041,8 @@ var THEMEMASCOT = THEMEMASCOT || {};
             THEMEMASCOT.header.init();
             THEMEMASCOT.slider.init();
             THEMEMASCOT.widget.init();
-            THEMEMASCOT.documentOnReady.windowscroll();
+			THEMEMASCOT.documentOnReady.windowscroll();
+			THEMEMASCOT.initialize.RandomLovePhrase();
             $.stellar('refresh');
         },
 
