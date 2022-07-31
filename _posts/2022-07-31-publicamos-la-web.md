@@ -4,7 +4,7 @@ thumbnail: /assets/nosotros/web-boda-cortada.jpg
 parallax: /assets/images/unsplash/puesta-sol-corazon-edit.jpg
 mainImage: /assets/nosotros/web-boda.jpg
 title:  "¡Publicamos la web de la boda!"
-date:   2022-07-25 12:23:39 +0200
+date:   2022-07-31 12:23:39 +0200
 categories: pre-boda
 tags: preparativos boda web
 excerpt_separator: <!--resumen-->
