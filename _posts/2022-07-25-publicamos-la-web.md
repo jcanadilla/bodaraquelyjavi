@@ -1,6 +1,6 @@
 ---
 layout: post
-thumbnail: /assets/nosotros/web-boda.jpg
+thumbnail: /assets/nosotros/web-boda-cortada.jpg
 parallax: /assets/images/unsplash/puesta-sol-corazon-edit.jpg
 mainImage: /assets/nosotros/web-boda.jpg
 title:  "¡Publicamos la web de la boda!"
