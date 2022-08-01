@@ -8,3 +8,6 @@ theme. But don't modify style-main.css file.
 */
 
 /* Your custom css codes start here: */
+.sepia {
+	filter: sepia(1)
+}

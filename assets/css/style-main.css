@@ -4355,7 +4355,6 @@ table.no-border td {
 .single-post article .entry-title {
   font-family: "Open Sans", sans-serif;
   padding: 15px 0 0;
-  text-transform: capitalize;
 }
 .single-post .entry-content {
   border: none;
