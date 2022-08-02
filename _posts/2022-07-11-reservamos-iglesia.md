@@ -9,11 +9,20 @@ categories: pre-boda
 tags: iglesia preparativos boda web
 excerpt_separator: <!--resumen-->
 ---
-Después del mágico día 5 de Julio (día de la pedida), teníamos que conseguir una bonita fecha en la iglesia de Navalcarnero. Teníamos claro que queríamos casarnos aquí pero no sabíamos qué disponibilidad tendría. Siempre se había hablado que en esta iglesia hay mucha lista de espera para casarse...
+Después del mágico día 5 de julio (día de la pedida), queríamos conseguir una bonita fecha en la iglesia de Navalcarnero. Teníamos claro que íbamos casarnos aquí, pero no sabíamos qué disponibilidad tendría; siempre nos decían que en esta iglesia había mucha lista de espera para casarse.
 
-Al día siguiente, fuimos a hablar con el párroco, nos enseñó la lista de días y franjas horarias disponibles. La boda, teníamos claro que tenía que ser en sábado por la tarde para facilitar que los invitados pudieran venir y eso limitaba mucho los días disponibles. **¡Sólo quedaban 5 sábados disponibles entre mayo y junio!** 
+Al día siguiente, fuimos a hablar con el párroco, nos enseñó la lista de días y franjas horarias disponibles. La boda tenía que ser en sábado por la tarde para facilitar que los invitados pudieran venir, y eso limitaba mucho los días libres. **¡Sólo quedaban 5 sábados entre mayo y junio!** 
 
-Y, cosas de la vida, el primer día que descartamos fue el día que después escogimos. ¿Por qué? Pues porque le dimos un sentimiento y una razón de ser. Al principio, no nos gustaba el número: *¿el 13? ¿Cómo nos vamos a casar en día 13? Descartado*. Después de un rato intentando decidir entre fechas que no nos decían nada, el novio, encontró la clave.
+Y, cosas de la vida, el primer día que descartamos fue el día que después escogimos. ¿Por qué? Pues porque le dimos un sentimiento y una razón de ser. Al principio, no nos gustaba el número:
+> *- ¿El 13?*
+> 
+> *- ¿Cómo nos vamos a casar en día 13?*
+> 
+> *- Descartado*
 
-El día 13 de mayo, es el 13 del 5º mes del año. Justo en 2023, haremos **13 años** de novios (ahí está el 13). Además, para nosotros día **5** siempre ha tenido un significado especial y ha sido un día marcado en cada mes del calendario porque comenzamos a salir el **día 5** de enero de 2010. Nada más encontrar ese *significado* en el día, teníamos decidido que esa tenía que ser la fecha elegida.
+
+Después de un rato intentando decidir entre fechas que no nos decían nada, el novio, encontró la clave.
+
+Para nosotros el día 5 siempre ha tenido un significado especial y ha sido un día marcado en cada mes del calendario porque comenzamos a salir el día 5 de enero de 2010. Justo en 2023 haremos **13 años** de novios y será en mayo, el **5º** mes del año.
+Nada más encontrar el *significado*, decidimos que esa tenía que ser la fecha elegida para nuestra boda **13/05/2023**.
 
