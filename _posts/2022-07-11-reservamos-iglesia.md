@@ -6,7 +6,7 @@ mainImage: /assets/iglesia/iglesia_noche_original.jpg
 title:  "¡Ya tenemos fecha de boda!"
 date:   2022-07-11 19:40:00 +0200
 categories: pre-boda
-tags: iglesia preparativos boda web
+tags: iglesia preparativos boda
 excerpt_separator: <!--resumen-->
 ---
 Después del mágico día 5 de julio (día de la pedida), queríamos conseguir una bonita fecha en la iglesia de Navalcarnero. Teníamos claro que íbamos casarnos aquí, pero no sabíamos qué disponibilidad tendría; siempre nos decían que en esta iglesia había mucha lista de espera para casarse.
