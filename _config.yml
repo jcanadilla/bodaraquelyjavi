@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-author: Raquel y Javi
-title: Boda de Raquel y Javi
+author: Raquel y Javier
+title: Boda de Raquel y Javier
 email: jcanadillacasco@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
   Bienvenidos a la página web de nuesta boda. Estamos muy felices de que forméis
@@ -27,7 +27,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://bodaraquelyjavier.live" # the base hostname & protocol for your site, e.g. http://example.com
 basefolder: f57dfbee3893dde04700f97c40ffae91d680bfc5
-keywords: boda,javi,raquel,nos casamos,amor
+keywords: boda,javier,raquel,nos casamos,amor
 
 paginate: 6
 paginate_path: "f57dfbee3893dde04700f97c40ffae91d680bfc5/blog/page:num/"
