@@ -48,11 +48,18 @@ layout: password
 												dataType: "html",
 												success: function (data) {
 
+													gtag('event', 'login', {
+														'event_name': 'password_ok'
+													})
+
 													window.location = url;
 
 												},
 												error: function (xhr, ajaxOptions, thrownError) {
 
+													gtag('event', 'login', {
+														'event_name': 'password_error'
+													})
 
 													parent.location.hash = hash;
 
