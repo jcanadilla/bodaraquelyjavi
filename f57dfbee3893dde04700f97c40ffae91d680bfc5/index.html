@@ -4,6 +4,30 @@ menu: home
 layout: default
 ---
 
+<script type="text/javascript">
+	const searchParams = window.location.search;
+
+	const urlParams = new URLSearchParams(searchParams);
+
+	const qr = urlParams.get('qr') || false;
+
+	console.log('VIENE POR QR: ', qr);
+
+	if (qr) {
+		gtag('event', 'qr', {
+			event_name: 'qr',
+			value: true
+		})
+	} else {
+		gtag('event', 'qr', {
+			event_name: 'no_qr',
+			value: false
+		})
+	}
+
+	window.history.replaceState(null, document.title, window.location.origin + window.location.pathname);
+
+</script>
 
 <!-- Section: home -->
 <section id="home" class="divider parallax no-bg layer-overlay overlay-dark-3">
