@@ -9,21 +9,14 @@ layout: default
 
 	const urlParams = new URLSearchParams(searchParams);
 
-	const qr = urlParams.get('qr') || false;
+	const origin = urlParams.get('origin') || 'direct';
 
-	console.log('VIENE POR QR: ', qr);
+	console.log('VIENE POR:', origin);
 
-	if (qr) {
-		gtag('event', 'qr', {
-			event_name: 'qr',
-			value: true
-		})
-	} else {
-		gtag('event', 'qr', {
-			event_name: 'no_qr',
-			value: false
-		})
-	}
+	gtag('event', 'origin', {
+		event_name: 'origin',
+		value: origin
+	})
 
 	window.history.replaceState(null, document.title, window.location.origin + window.location.pathname);
 

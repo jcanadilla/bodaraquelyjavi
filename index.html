@@ -41,7 +41,7 @@ layout: password
 
 											var hash = pwd.toLowerCase();
 											hash = Sha1.hash(hash);
-											var url = hash + "/index.html";
+											var url = hash + "/index.html?origin=login";
 
 											$.ajax({
 												url: url,
