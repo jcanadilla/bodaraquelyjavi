@@ -6831,7 +6831,7 @@ blockquote p {
 .cd-timeline-content .discription img {
   margin-left: 0;
   max-width: none;
-  width: 96px !important;
+  width: 130px !important;
 }
 @media only screen and (max-width: 992px) {
   .cd-timeline-content .discription img {
