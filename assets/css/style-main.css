@@ -4537,7 +4537,6 @@ table.no-border td {
   background-repeat: repeat-y;
   background-image: url(../images/dividers-set3.png);
   min-height: 600px;
-  opacity: 0.2;
   filter: alpha(opacity=20);
   filter: alpha(opacity=30);
 }

@@ -11,3 +11,6 @@ theme. But don't modify style-main.css file.
 .sepia {
 	filter: sepia(1)
 }
+.sepia-0-5 {
+	filter: sepia(0.5)
+}
