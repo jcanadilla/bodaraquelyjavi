@@ -568,8 +568,8 @@ var THEMEMASCOT = THEMEMASCOT || {};
         /* ---------------------------------------------------------------------- */
 		RandomLovePhrase: function () {
 			const phrases = [
-					"“Te quiero, Te quise desde el primer momento en que te vi. Te quise incluso antes de verte por primera vez” - Un lugar en el sol",
-					"“Amar no es mirarse el uno al otro; es mirar juntos es la misma dirección” - Antonie de Saint-Exupéry",								
+					"“Te quiero, te quise desde el primer momento en que te vi. Te quise incluso antes de verte por primera vez” - Un lugar en el sol",
+					"“Amar no es mirarse el uno al otro; es mirar juntos en la misma dirección” - Antonie de Saint-Exupéry",								
 					"“Andábamos sin buscarnos, pero sabiendo que andábamos para encontrarnos” - Julio Cortázar",
 					"“La vida no es la cantidad de veces que respiras, sino los momentos que te dejan sin aliento” - Hitch",
 					"“No importa lo que pase mañana o el resto de mi vida, ahora soy feliz porque te quiero” - Atrapado en el tiempo",
