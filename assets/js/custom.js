@@ -1987,7 +1987,7 @@ var THEMEMASCOT = THEMEMASCOT || {};
 
         init: function() {
 
-            var t = setTimeout(function() {
+			var t = setTimeout(function () {
                 THEMEMASCOT.initialize.TM_preLoaderOnLoad();
                 THEMEMASCOT.initialize.TM_hashForwarding();
                 THEMEMASCOT.initialize.TM_parallaxBgInit();
