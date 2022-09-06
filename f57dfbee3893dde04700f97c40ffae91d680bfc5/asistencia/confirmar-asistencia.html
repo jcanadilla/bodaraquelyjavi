@@ -26,26 +26,26 @@ layout: default
 						<div class="row">
 							<div class="col-sm-12">
 								<div class="form-group">
-									<label>Nombre</label>
+									<label class="form-label">Nombre</label>
 									<input type="text" placeholder="del que confirma la asistencia de una o de varias personas" id="form_nombre" name="form_nombre" required class="form-control">
 								</div>
 							</div>
 							<div class="col-sm-12">
 								<div class="form-group">
-									<label>Seremos</label>
+									<label class="form-label">Seremos</label>
 									<div class ="ml-30">
-										<label>Adultos</label>
-										<input type="number" placeholder="2 adultos" id="form_num_adultos" name="form_num_adultos" required="" class="form-control">
-										<label class ="mt-10">Niños</label>
-										<input type="number" placeholder="1 niño" id="form_num_niños" name="form_num_niños" required="" class="form-control">
+										<label class="form-label">Adultos</label>
+										<input type="number" placeholder="2 adultos" id="form_num_adultos" name="form_num_adultos" required class="form-control">
+										<label class="form-label" class ="mt-10">Niños</label>
+										<input type="number" placeholder="1 niño" id="form_num_niños" name="form_num_niños" required class="form-control">
 									</div>
 								</div>
 							</div>
 							<div class="col-sm-12">
 								<div class="form-group">
 									<div class="styled-select">
-										<label>Confirmo asistencia</label>
-										<select id="form_asistencia" name="form_asistencia" class="form-control">
+										<label class="form-label">Confirmo asistencia</label>
+										<select id="form_asistencia" name="form_asistencia" required class="form-control">
 											<option value="sí">Sí</option>
 											<option value="no">No</option>
 										</select>
@@ -55,8 +55,8 @@ layout: default
 							<div class="col-sm-12">
 								<div class="form-group">
 									<div class="styled-select">
-										<label>Menú especial</label>
-										<select id="form_menu_especial" name="form_menu_especial" class="form-control">
+										<label class="form-label">Menú especial</label>
+										<select id="form_menu_especial" name="form_menu_especial" required class="form-control">
 											<option value="no">No</option>
 											<option value="infantil">Infantil</option>
 											<option value="vegano">Vegano / vegetariano</option>
@@ -68,8 +68,8 @@ layout: default
 							<div class="col-sm-12">
 								<div class="form-group">
 									<div class="styled-select">
-										<label>Autobús</label>
-										<select id="form_autobus" name="form_autobus" class="form-control">
+										<label class="form-label">Autobús</label>
+										<select id="form_autobus" name="form_autobus" required class="form-control">
 											<option value="no">No</option>
 											<option value="sí">Sí</option>
 										</select>
@@ -85,7 +85,7 @@ layout: default
 							</div>
 							<div class="col-sm-12">
 								<div class="form-group">
-									<label>Comentarios</label>
+									<label class="form-label">Comentarios</label>
 									<textarea id="form_comentarios" placeholder="Indica aquí cualquier cosa que consideres importante para que la tengamos en cuenta" name="form_comentarios" class="form-control required" rows="5"></textarea>
 								</div>
 							</div>
@@ -101,35 +101,38 @@ layout: default
 					<!-- rsvp Form Validation-->
 					<script type="text/javascript">
 						$('#subscription-form').on('click', 'button', function(e) {
-							e.preventDefault();
-						
+							
 							const $form = $("#subscription-form");
-						
+							
 							const phone = '675493021';
+							
+							if ($form.validator('validate').has('.has-error').length) {
+								console.log('ERROR FORMULARIO');
+							} else {
+								e.preventDefault();
 						
-							// get object i.e {key: 'value'} of form
-							let data = {}
-							$form.serializeArray().forEach(v => data[v.name] = v.value)
-						
-							// make the ?text= payload, 
-							const text = 
+								// get object i.e {key: 'value'} of form
+								let data = {}
+								$form.serializeArray().forEach(v => data[v.name] = v.value)
+							
+								// make the ?text= payload, 
+								const text = 
 `Hola Raquel, he rellenado el formulario de asistencia a través de vuestra página web:
 *Nombre*: ${data.form_nombre}
 *Somos*: ${data.form_num_adultos} adultos y ${data.form_num_niños} niños
 *Confirmo asistencia*: ${data.form_asistencia}
 *Menú especial*: ${data.form_menu_especial}
 *Autobús*: ${data.form_autobus}
-    Ávila - Navalcarnero - Finca La Peraleña: ${data.form_autobus_avila_naval_finca ? '*sí*':'no'}
-    Finca La Peraleña - Ávila: ${data.form_autobus_finca_avila ? '*sí*':'no'}
-    Navalcarnero - Finca La Peraleña: ${data.form_autobus_naval_finca ? '*sí*':'no'}
-    Finca La Peraleña - Navalcarnero: ${data.form_autobus_finca_naval ? '*sí*':'no'}
+	Ávila - Navalcarnero - Finca La Peraleña: ${data.form_autobus_avila_naval_finca ? '*sí*':'no'}
+	Finca La Peraleña - Ávila: ${data.form_autobus_finca_avila ? '*sí*':'no'}
+	Navalcarnero - Finca La Peraleña: ${data.form_autobus_naval_finca ? '*sí*':'no'}
+	Finca La Peraleña - Navalcarnero: ${data.form_autobus_finca_naval ? '*sí*':'no'}
 *Comentarios*: ${data.form_comentarios}
 `;
-						
-							// make the url
-							const action = "https://wa.me/" + phone + "?text=" + window.encodeURIComponent(text);
-							console.log(action)
-							window.open(action);
+								// make the url
+								const action = "https://wa.me/" + phone + "?text=" + window.encodeURIComponent(text);
+								window.open(action);
+							}
 						});
 					</script>
 					<!-- rsvp Form Ends -->
