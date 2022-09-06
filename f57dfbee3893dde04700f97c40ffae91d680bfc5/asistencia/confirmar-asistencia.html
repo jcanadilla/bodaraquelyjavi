@@ -27,14 +27,18 @@ layout: default
 							<div class="col-sm-12">
 								<div class="form-group">
 									<label>Nombre</label>
-									<input type="text" placeholder="del que confirma la asistencia de una o varias personas" id="form_nombre" name="form_nombre" required class="form-control">
+									<input type="text" placeholder="del que confirma la asistencia de una o de varias personas" id="form_nombre" name="form_nombre" required class="form-control">
 								</div>
 							</div>
 							<div class="col-sm-12">
 								<div class="form-group">
-									<label>Somos</label>
-									<input type="number" placeholder="2 adultos" id="form_num_adultos" name="form_num_adultos" required="" class="form-control">
-									<input type="number" placeholder="1 niño" id="form_num_niños" name="form_num_niños" required="" class="form-control mt-10">
+									<label>Seremos</label>
+									<div class ="ml-30">
+										<label>Adultos</label>
+										<input type="number" placeholder="2 adultos" id="form_num_adultos" name="form_num_adultos" required="" class="form-control">
+										<label class ="mt-10">Niños</label>
+										<input type="number" placeholder="1 niño" id="form_num_niños" name="form_num_niños" required="" class="form-control">
+									</div>
 								</div>
 							</div>
 							<div class="col-sm-12">
@@ -71,10 +75,10 @@ layout: default
 										</select>
 									</div>
 									<div class="mt-10 ml-30">
-										<span><input type="checkbox" id="form_autobus_1" value="avila_naval_finca"> Ávila - Navalcarnero - Finca La Peraleña <i>(*salida a las 15:30h)</i></span></br>
-										<span><input type="checkbox" id="form_autobus_2" value="finca_avila"> Finca La Peraleña - Ávila <i>(*salida a las 3.00h)</i></span></br>
-										<span><input type="checkbox" id="form_autobus_3" value="naval_finca"> Navalcarnero - Finca La Peraleña <i>(*salida a las 18.30h)</i></span></br>
-										<span><input type="checkbox" id="form_autobus_4" value="finca_naval"> Finca La Peraleña - Navalcarnero <i>(*salida a las 3.00h)</i></span></br>
+										<span><input type="checkbox" name="form_autobus_avila_naval_finca" value="avila_naval_finca"> Ávila - Navalcarnero - Finca La Peraleña <i>(*salida a las 15:30h)</i></span></br>
+										<span><input type="checkbox" name="form_autobus_finca_avila" value="finca_avila"> Finca La Peraleña - Ávila <i>(*salida a las 3.00h)</i></span></br>
+										<span><input type="checkbox" name="form_autobus_naval_finca" value="naval_finca"> Navalcarnero - Finca La Peraleña <i>(*salida a las 18.30h)</i></span></br>
+										<span><input type="checkbox" name="form_autobus_finca_naval" value="finca_naval"> Finca La Peraleña - Navalcarnero <i>(*salida a las 3.00h)</i></span></br>
 										<i>* los horarios, de momento, son orientativos</i>
 									</div>
 								</div>
@@ -108,24 +112,24 @@ layout: default
 							$form.serializeArray().forEach(v => data[v.name] = v.value)
 						
 							// make the ?text= payload, 
-							// - could use .filter() here too if you dont want empty values
-							const text = [
-							  data.form_nombre,
-							  data.form_num_adultos,
-							  data.form_num_niños,
-							  data.form_asistencia,
-							  data.form_menu_especial,
-							  data.form_autobus,
-							  data.form_autobus_1,
-							  data.form_autobus_2,
-							  data.form_autobus_3,
-							  data.form_autobus_4,
-							  data.form_comentarios,
-							].join(' - ') // change to what you want sep to be
+							const text = 
+`Hola Raquel, he rellenado el formulario de asistencia a través de vuestra página web:
+*Nombre*: ${data.form_nombre}
+*Somos*: ${data.form_num_adultos} adultos y ${data.form_num_niños} niños
+*Confirmo asistencia*: ${data.form_asistencia}
+*Menú especial*: ${data.form_menu_especial}
+*Autobús*: ${data.form_autobus}
+    Ávila - Navalcarnero - Finca La Peraleña: ${data.form_autobus_avila_naval_finca ? '*sí*':'no'}
+    Finca La Peraleña - Ávila: ${data.form_autobus_finca_avila ? '*sí*':'no'}
+    Navalcarnero - Finca La Peraleña: ${data.form_autobus_naval_finca ? '*sí*':'no'}
+    Finca La Peraleña - Navalcarnero: ${data.form_autobus_finca_naval ? '*sí*':'no'}
+*Comentarios*: ${data.form_comentarios}
+`;
 						
 							// make the url
 							const action = "https://wa.me/" + phone + "?text=" + encodeURIComponent(text);
 							console.log(action)
+							window.open(action);
 						});
 					</script>
 					<!-- rsvp Form Ends -->
