@@ -27,20 +27,20 @@ layout: default
 							<div class="col-sm-12">
 								<div class="form-group">
 									<span>Nombre</span>
-									<input type="text" id="NAME" name="NAME" required class="form-control">
+									<input type="text" id="form_nombre" name="form_nombre" required class="form-control">
 								</div>
 							</div>
 							<div class="col-sm-12">
 								<div class="form-group">
 									<span>Teléfono</span>
-									<input type="text" id="PHONE" name="PHONE" required="" class="form-control">
+									<input type="text" id="form_telefono" name="form_telefono" required="" class="form-control">
 								</div>
 							</div>
 							<div class="col-sm-12">
 								<div class="form-group">
 									<div class="styled-select">
 										<span>Asistiré</span>
-										<select id="EVENT" name="EVENT" class="form-control">
+										<select id="form_asisto" name="form_asisto" class="form-control">
 											<option value="si">Sí</option>
 											<option value="no">No</option>
 										</select>
@@ -51,7 +51,7 @@ layout: default
 								<div class="form-group">
 									<div class="styled-select">
 										<span>Menú especial</span>
-										<select id="SPEC" name="SPEC" class="form-control">
+										<select id="form_menu_especial" name="form_menu_especial" class="form-control">
 											<option value="no">No</option>
 											<option value="vegano">Vegano / vegetariano</option>
 											<option value="alergia">Alergia</option>
@@ -62,10 +62,10 @@ layout: default
 							<div class="col-sm-12">
 								<div class="form-group">
 									<span>Comentarios</span>
-									<textarea id="MSG" name="MSG" class="form-control required" rows="5"></textarea>
+									<textarea id="form_comentarios" name="form_comentarios" class="form-control required" rows="5"></textarea>
 								</div>
 							</div>
-							<div class="col-sm-12">
+							<div class="col-sm-12 text-center">
 								<div class="form-group mb-0">
 									<button type="submit" class="btn btn-colored btn-theme-colored btn-lg btn-submit"
 										data-loading-text="Espera..."><i class="fa fa-brands fa-whatsapp"></i>
@@ -90,11 +90,11 @@ layout: default
 							// make the ?text= payload, 
 							// - could use .filter() here too if you dont want empty values
 							const text = [
-							  data.NAME,
-							  data.PHONE,
-							  data.EVENT,
-							  data.SPEC,
-							  data.MSG,
+							  data.form_nombre,
+							  data.form_telefono,
+							  data.form_asisto,
+							  data.form_menu_especial,
+							  data.form_comentarios,
 							].join(' - ') // change to what you want sep to be
 						
 							// make the url
