@@ -46,7 +46,7 @@ layout: default
 									<div class="styled-select">
 										<label>Confirmo asistencia</label>
 										<select id="form_asistencia" name="form_asistencia" class="form-control">
-											<option value="si">Sí</option>
+											<option value="sí">Sí</option>
 											<option value="no">No</option>
 										</select>
 									</div>
@@ -71,7 +71,7 @@ layout: default
 										<label>Autobús</label>
 										<select id="form_autobus" name="form_autobus" class="form-control">
 											<option value="no">No</option>
-											<option value="si">Sí</option>
+											<option value="sí">Sí</option>
 										</select>
 									</div>
 									<div class="mt-10 ml-30">
@@ -127,7 +127,7 @@ layout: default
 `;
 						
 							// make the url
-							const action = "https://wa.me/" + phone + "?text=" + encodeURIComponent(text);
+							const action = "https://wa.me/" + phone + "?text=" + window.encodeURIComponent(text);
 							console.log(action)
 							window.open(action);
 						});
