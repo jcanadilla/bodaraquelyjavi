@@ -341,105 +341,19 @@ layout: default
 <!-- Section: Contact  -->
 <section id="contact" class="divider parallax layer-overlay overlay-dark-8" data-stellar-background-ratio="0.5"
 	data-bg-img="{{'/assets/images/unsplash/mesa.jpg'| relative_url}}">
-	<div class="container pt-150 pb-150">
-		<!-- Section Content -->
-		<div class="section-content">
-			<div class="row">
-				<div class="col-md-6 text-white">
-					<h1 class="mt-0 mb-30 text-theme-colored">¿Contamos contigo?</h1>
-					<p class="text-center">
-						<em>¡Es muy importante que nos confirmes todo cuanto antes para poder organizar mucho mejor la
-							boda!</em>
-						<br>
-						<em>Si no quieres hacerlo por aquí, también puedes hacerlo por <i
-								class="fa fa-brands fa-whatsapp"></i> o <i class="fa fa-solid fa-phone-flip"></i>
-					</p>
-					<form id="mailchimp-subscription-form1" class="form-transparent form-text-white" method="post">
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="form-group">
-									<input type="text" placeholder="Nombre" id="NAME" name="NAME" required
-										class="form-control">
-								</div>
-							</div>
-							<div class="col-sm-12">
-								<div class="form-group">
-									<input type="text" placeholder="Email" id="EMAIL" name="EMAIL" class="form-control"
-										required="">
-								</div>
-							</div>
-							<div class="col-sm-12">
-								<div class="form-group">
-									<input type="text" placeholder="Teléfono" id="PHONE" name="PHONE" required=""
-										class="form-control">
-								</div>
-							</div>
-							<div class="col-sm-12">
-								<div class="form-group">
-									<div class="styled-select">
-										<select id="EVENT" name="EVENT" class="form-control">
-											<option value="todos">Ceremonia + Cena</option>
-											<option value="ceremonia">Ceremonia</option>
-											<option value="cena">Cena</option>
-											<option value="ninguno">No asistiré</option>
-										</select>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-12">
-								<div class="form-group">
-									<div class="styled-select">
-										<select id="SPEC" name="SPEC" class="form-control">
-											<option value="ninguna">Ninguna</option>
-											<option value="vegano">Vegano / vegetariano</option>
-											<option value="alergia">Alergia</option>
-										</select>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-12">
-								<div class="form-group">
-									<textarea id="MSG" name="MSG" class="form-control required" rows="5"
-										placeholder="Dejar comentarios"></textarea>
-								</div>
-							</div>
-							<div class="col-sm-12">
-								<div class="form-group mb-0">
-									<input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden"
-										value="">
-									<button type="submit" class="btn btn-colored btn-theme-colored btn-lg btn-submit"
-										data-loading-text="Espera..."><i class="fa-regular fa-paper-plane"></i>
-										Enviar</button>
-								</div>
-							</div>
-						</div>
-					</form>
-					<!-- rsvp Form Validation-->
-					<script type="text/javascript">
-						$('#mailchimp-subscription-form1').ajaxChimp({
-							callback: mailChimpCallBack,
-							url: 'https://hotmail.us14.list-manage.com/subscribe/post?u=e654d01638ee86592d5ca8644&amp;id=b51f714a51'
-						});
-
-						function mailChimpCallBack(resp) {
-							// Hide any previous response text
-							var $mailchimpform = $('#mailchimp-subscription-form1');
-							var $response = '';
-							$mailchimpform.children(".alert").remove();
-							console.log(resp);
-							if (resp.result === 'success') {
-								$response = '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>¡Gracias! <i class="fa-regular fa-face-kiss-wink-heart fa-beat-fade"></i> </div>';
-							} else if (resp.result === 'error') {
-								$response = '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
-							}
-							$mailchimpform.prepend($response);
-						}
-					</script>
-					<!-- rsvp Form Ends -->
+	<a href="{{site.baseurl}}/{{site.basefolder}}/asistencia/confirmar-asistencia">
+		<div class="container pt-150 pb-150">
+			<!-- Section Content -->
+			<div class="section-content wow fadeInUp animation-delay1">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center"> 
+						<i class="fa fa-calendar-check text-white font-60"></i>
+						<h1 class="text-white">Confirma tu asistencia aquí</h1>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</a>
 </section>
 
 
