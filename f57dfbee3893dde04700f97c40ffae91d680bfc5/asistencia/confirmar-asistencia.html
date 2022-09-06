@@ -75,10 +75,20 @@ layout: default
 										</select>
 									</div>
 									<div class="mt-10 ml-30">
-										<span><input type="checkbox" name="form_autobus_avila_naval_finca" value="avila_naval_finca"> Ávila - Navalcarnero - Finca La Peraleña <i>(*salida a las 15:30h)</i></span></br>
-										<span><input type="checkbox" name="form_autobus_finca_avila" value="finca_avila"> Finca La Peraleña - Ávila <i>(*salida a las 3.00h)</i></span></br>
-										<span><input type="checkbox" name="form_autobus_naval_finca" value="naval_finca"> Navalcarnero - Finca La Peraleña <i>(*salida a las 18.30h)</i></span></br>
-										<span><input type="checkbox" name="form_autobus_finca_naval" value="finca_naval"> Finca La Peraleña - Navalcarnero <i>(*salida a las 3.00h)</i></span></br>
+										<span>
+											<input type="checkbox" name="form_autobus_avila" value="avila">
+											 Ávila → Navalcarnero → Finca La Peraleña → Ávila 
+											<br/>
+											<i class="ml-20">salida a las 14:30h y regreso a las 3:00h</i>
+										</span>
+										<br/>
+										<span>
+											<input type="checkbox" name="form_autobus_naval" value="naval">
+											 Navalcarnero → Finca La Peraleña → Navalcarnero
+											<br/>
+											<i class="ml-20">salida a las 18:30h y regreso a las 3:00h</i>
+										</span>
+										<br/>
 										<i>* los horarios, de momento, son orientativos</i>
 									</div>
 								</div>
@@ -119,10 +129,8 @@ layout: default
 *Confirmo asistencia*: ${data.form_asistencia}
 *Menú especial*: ${data.form_menu_especial}
 *Autobús*: ${data.form_autobus}
-	${data.form_autobus_avila_naval_finca ? 'Ávila - Navalcarnero - Finca La Peraleña':''}
-	${data.form_autobus_finca_avila ? 'Finca La Peraleña - Ávila':''}
-	${data.form_autobus_naval_finca ? 'Navalcarnero - Finca La Peraleña':''}
-	${data.form_autobus_finca_naval ? 'Finca La Peraleña - Navalcarnero':''}
+	${data.form_autobus_avila ? 'Ávila → Navalcarnero → Finca La Peraleña → Ávila':''}
+	${data.form_autobus_naval ? 'Navalcarnero → Finca La Peraleña → Navalcarnero':''}
 *Comentarios*: ${data.form_comentarios}
 `.replaceAll('	\n','');//usamos el replace all para eliminar las opciones de buses vacias
 							// make the url
