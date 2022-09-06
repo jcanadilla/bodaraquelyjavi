@@ -22,7 +22,7 @@ layout: default
 			</div>
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 text-white">
-					<form id="subscription-form" class="form-transparent form-text-white" method="post">
+					<form id="subscription-form" class="form-transparent form-text-white">
 						<div class="row">
 							<div class="col-sm-12">
 								<div class="form-group">
@@ -100,23 +100,19 @@ layout: default
 					</form>
 					<!-- rsvp Form Validation-->
 					<script type="text/javascript">
-						$('#subscription-form').on('click', 'button', function(e) {
+						$('#subscription-form').on('submit', function(e) {
 							
+							e.preventDefault();
 							const $form = $("#subscription-form");
 							
 							const phone = '675493021';
 							
-							if ($form.validator('validate').has('.has-error').length) {
-								console.log('ERROR FORMULARIO');
-							} else {
-								e.preventDefault();
+							// get object i.e {key: 'value'} of form
+							let data = {}
+							$form.serializeArray().forEach(v => data[v.name] = v.value)
 						
-								// get object i.e {key: 'value'} of form
-								let data = {}
-								$form.serializeArray().forEach(v => data[v.name] = v.value)
-							
-								// make the ?text= payload, 
-								const text = 
+							// make the ?text= payload, 
+							const text = 
 `Hola Raquel, he rellenado el formulario de asistencia a través de vuestra página web:
 *Nombre*: ${data.form_nombre}
 *Somos*: ${data.form_num_adultos} adultos y ${data.form_num_niños} niños
@@ -129,11 +125,10 @@ layout: default
 	Finca La Peraleña - Navalcarnero: ${data.form_autobus_finca_naval ? '*sí*':'no'}
 *Comentarios*: ${data.form_comentarios}
 `;
-								// make the url
-								const action = "https://wa.me/" + phone + "?text=" + window.encodeURIComponent(text);
-								window.open(action);
-							}
-						});
+							// make the url
+							const action = "https://wa.me/" + phone + "?text=" + window.encodeURIComponent(text);
+							window.open(action);
+						});	
 					</script>
 					<!-- rsvp Form Ends -->
 				</div>
