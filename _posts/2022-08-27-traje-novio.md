@@ -1,8 +1,8 @@
 ---
 layout: post
-thumbnail: /assets/iglesia/iglesia_noche.jpg
+thumbnail: /assets/trajes/traje.png
 parallax: /assets/images/unsplash/cielo.jpg
-mainImage: /assets/iglesia/iglesia_noche_original.jpg
+mainImage: /assets/trajes/traje.png
 bgColor: ""
 title:  "¡El novio ya tiene traje!"
 date:   2022-08-27
