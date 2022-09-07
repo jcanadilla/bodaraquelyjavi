@@ -1,7 +1,7 @@
 ---
 layout: post
 thumbnail: /assets/trajes/traje.png
-parallax: /assets/images/unsplash/cielo.jpg
+parallax: /assets/images/unsplash/trajes.jpg
 mainImage: /assets/trajes/traje.png
 bgColor: ""
 title:  "¡El novio ya tiene traje!"

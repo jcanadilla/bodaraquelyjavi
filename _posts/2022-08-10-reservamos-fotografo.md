@@ -1,7 +1,7 @@
 ---
 layout: post
 thumbnail: /assets/fotografo/kurry.jpg
-parallax: /assets/images/unsplash/cielo.jpg
+parallax: /assets/images/unsplash/camara.jpg
 mainImage: /assets/fotografo/kurry.jpg
 bgColor: ""
 title:  "¡Ya tenemos fotógrafo!"

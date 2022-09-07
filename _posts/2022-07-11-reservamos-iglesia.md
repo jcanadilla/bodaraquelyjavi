@@ -1,7 +1,7 @@
 ---
 layout: post
 thumbnail: /assets/iglesia/iglesia_noche.jpg
-parallax: /assets/images/unsplash/cielo.jpg
+parallax: /assets/images/unsplash/anillos.jpg
 mainImage: /assets/iglesia/iglesia_noche_original.jpg
 bgColor: ""
 title:  "¡Ya tenemos fecha de boda!"

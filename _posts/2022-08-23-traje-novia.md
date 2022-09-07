@@ -1,7 +1,7 @@
 ---
 layout: post
 thumbnail: /assets/trajes/vestido.png
-parallax: /assets/images/unsplash/cielo.jpg
+parallax: /assets/images/unsplash/vestidos.jpg
 mainImage: /assets/trajes/vestido.png
 bgColor: ""
 title:  "¡La novia ya tiene vestido!"
