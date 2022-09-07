@@ -309,7 +309,7 @@ layout: default
 			</div>
 		</div>
 		<div class="section-content">
-			<div class="row">
+			<div class="row blog-posts">
 				{% for post in site.posts limit: 6 %}
 				<div class="col-sm-6 col-md-4 col-lg-4 wow fadeInUp animation-delay1">
 					<article class="post clearfix maxwidth600 mb-30">
@@ -318,9 +318,8 @@ layout: default
 									class="img-responsive img-fullwidth {{post.bgColor}}"> </div>
 						</div>
 						<div class="entry-content border-1px p-20">
-							<h5 class="entry-title mt-0 pt-0"><a href="{{post.url | relative_url}}">{{post.title}}</a>
-							</h5>
-							<p class="text-left mb-20 mt-15 font-13">{{ post.content | truncate: 200 }}</p>
+							<h5 class="entry-title font-raleway mt-0 pt-0"><a href="{{post.url | relative_url}}">{{post.title}}</a></h5>
+							<p class="text-left mb-20 mt-15 font-13">{{ post.content | truncate: 190 }}</p>
 							<a class="btn btn-dark btn-theme-colored btn-xs btn-flat pull-left mt-0"
 								href="{{post.url | relative_url}}">Leer más</a>
 							<ul class="list-inline entry-date pull-right font-12 mt-5">

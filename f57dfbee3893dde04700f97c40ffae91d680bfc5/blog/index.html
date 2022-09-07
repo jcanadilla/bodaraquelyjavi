@@ -21,7 +21,7 @@ layout: default
 <!-- Section: Blog -->
 <section>
 	<div class="container mt-30 mb-30 pt-30 pb-30">
-		<div class="row">
+		<div class="row blog-posts">
 			{% for post in paginator.posts %}
 			<div class="col-sm-6 col-md-4 col-lg-4">
 				<article class="post clearfix maxwidth600 mb-30">
@@ -33,14 +33,14 @@ layout: default
 						</div>
 					</div>
 					<div class="entry-content border-1px p-20">
-						<h5 class="entry-title mt-0 pt-0"><a href="{{post.url | relative_url}}">{{post.title}}</a></h5>
+						<h5 class="entry-title font-raleway mt-0 pt-0"><a href="{{post.url | relative_url}}">{{post.title}}</a></h5>
 						<div class="entry-meta">
 							<ul class="list-inline entry-date font-12 mt-5">
 								<li><span class="text-theme-colored">{{post.date | date: "%d-%m-%Y"}}</span>
 								</li>
 							</ul>
 						</div>
-						<p class="text-left mb-20 mt-15 font-13">{{ post.content | truncate: 200 }}</p>
+						<p class="text-left mb-20 mt-15 font-13">{{ post.content | truncate: 190 }}</p>
 						<a class="btn btn-dark btn-theme-colored btn-sm btn-flat pull-left mt-0"
 							href="{{post.url | relative_url}}">Leer más</a>
 						<div class="clearfix"></div>

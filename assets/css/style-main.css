@@ -4285,6 +4285,9 @@ table.no-border td {
   margin-bottom: 0;
   margin-top: 0;
 }
+.blog-posts .post .entry-title {
+  height: 70px;
+}
 .blog-posts .post .entry-meta span i {
   margin-right: 5px;
 }
