@@ -3,6 +3,7 @@ layout: post
 thumbnail: /assets/fotografo/kurry.jpg
 parallax: /assets/images/unsplash/cielo.jpg
 mainImage: /assets/fotografo/kurry.jpg
+bgColor: ""
 title:  "¡Ya tenemos fotógrafo!"
 date:   2022-08-10
 categories: pre-boda

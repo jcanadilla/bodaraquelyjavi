@@ -3,6 +3,7 @@ layout: post
 thumbnail: assets/cena/finca2.jpg
 parallax: /assets/cena/escalera.jpg
 mainImage: /assets/cena/finca2.jpg
+bgColor: ""
 title:  "¡La finca La Peraleña nos espera!"
 date:   2022-08-06 00:00
 categories: pre-boda

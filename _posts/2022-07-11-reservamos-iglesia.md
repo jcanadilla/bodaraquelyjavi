@@ -3,6 +3,7 @@ layout: post
 thumbnail: /assets/iglesia/iglesia_noche.jpg
 parallax: /assets/images/unsplash/cielo.jpg
 mainImage: /assets/iglesia/iglesia_noche_original.jpg
+bgColor: ""
 title:  "¡Ya tenemos fecha de boda!"
 date:   2022-07-11 19:40:00 +0200
 categories: pre-boda

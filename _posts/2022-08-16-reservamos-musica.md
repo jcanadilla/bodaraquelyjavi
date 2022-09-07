@@ -3,6 +3,7 @@ layout: post
 thumbnail: /assets/musica/logo.png
 parallax: /assets/musica/logo.png
 mainImage: /assets/musica/grupo.jpg
+bgColor: "dark bg-black"
 title:  "¡Ya tenemos música!"
 date:   2022-08-16
 categories: pre-boda
