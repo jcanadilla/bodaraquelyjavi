@@ -12,7 +12,6 @@ excerpt_separator: <!--resumen-->
 ---
 
 Como ya sabe todo el mundo, el vestido de la novia tiene que ser el secreto mejor guardado, así que poco más voy a poder adelantaros por aquí.
-
 Simplemente puedo decir que todas esas frases que hemos oído alguna vez, son ciertas
 > *- hay un vestido para cada novia*
 > 
