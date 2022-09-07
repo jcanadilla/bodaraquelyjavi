@@ -5,7 +5,7 @@ parallax: /assets/images/unsplash/pc.jpg
 mainImage: /assets/nosotros/web-boda.jpg
 bgColor: ""
 title:  "¡Publicamos la web de la boda!"
-date:   2022-09-01
+date:   2022- 
 categories: pre-boda
 tags: preparativos boda web
 excerpt_separator: <!--resumen-->
