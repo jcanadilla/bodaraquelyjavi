@@ -175,7 +175,7 @@ layout: default
 						<br>
 						<br>
 						<a class="btn btn-colored btn-theme-colored"
-						href="{{site.baseurl}}/{{site.basefolder}}/boda/programa.html">Ver más</a>
+							href="{{site.baseurl}}/{{site.basefolder}}/boda/programa.html">Ver más</a>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-4 pb-30">
@@ -189,8 +189,8 @@ layout: default
 							Un espacio en plena naturaleza para disfrutar de un menú exclusivo de la mano del
 							<b>Chef
 								Julio Reoyo</b>
-							</p>
-							<br>
+						</p>
+						<br>
 						<a class="btn btn-colored btn-theme-colored"
 							href="{{site.baseurl}}/{{site.basefolder}}/boda/programa.html">Ver más</a>
 					</div>
@@ -281,7 +281,7 @@ layout: default
 								</div>
 							</div>
 							<div class="item">
-								<img src="https://api.lorem.space/image/face?w=255&h=275&hash=B0E33EF4" alt="">
+								<img src="{{'/assets/familia/mario.jpg'| relative_url}}" alt="">
 								<div class="info">
 									<h3 class="name">Mario</h3>
 									<p class="relation">Hermano del novio</p>
@@ -318,7 +318,8 @@ layout: default
 									class="img-responsive img-fullwidth {{post.bgColor}}"> </div>
 						</div>
 						<div class="entry-content border-1px p-20">
-							<h5 class="entry-title font-raleway mt-0 pt-0"><a href="{{post.url | relative_url}}">{{post.title}}</a></h5>
+							<h5 class="entry-title font-raleway mt-0 pt-0"><a
+									href="{{post.url | relative_url}}">{{post.title}}</a></h5>
 							<p class="text-left mb-20 mt-15 font-13">{{ post.content | truncate: 190 }}</p>
 							<a class="btn btn-dark btn-theme-colored btn-xs btn-flat pull-left mt-0"
 								href="{{post.url | relative_url}}">Leer más</a>
@@ -345,7 +346,7 @@ layout: default
 			<!-- Section Content -->
 			<div class="section-content wow fadeInUp animation-delay1">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center"> 
+					<div class="col-md-8 col-md-offset-2 text-center">
 						<i class="fa fa-calendar-check text-white font-60"></i>
 						<h1 class="text-white">Confirma tu asistencia aquí</h1>
 					</div>
