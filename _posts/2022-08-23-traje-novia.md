@@ -3,7 +3,7 @@ layout: post
 thumbnail: /assets/trajes/vestido.png
 parallax: /assets/images/unsplash/vestidos.jpg
 mainImage: /assets/trajes/vestido.png
-bgColor: ""
+bgColor: "bg-gray-lighter"
 title:  "¡La novia ya tiene vestido!"
 date:   2022-08-23
 categories: pre-boda

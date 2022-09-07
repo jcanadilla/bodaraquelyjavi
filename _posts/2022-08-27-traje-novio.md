@@ -3,7 +3,7 @@ layout: post
 thumbnail: /assets/trajes/traje.png
 parallax: /assets/images/unsplash/trajes.jpg
 mainImage: /assets/trajes/traje.png
-bgColor: ""
+bgColor: "bg-gray-lighter"
 title:  "¡El novio ya tiene traje!"
 date:   2022-08-27
 categories: pre-boda
