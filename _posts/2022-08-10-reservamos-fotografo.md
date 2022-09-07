@@ -11,4 +11,6 @@ tags: fotografo preparativos boda
 excerpt_separator: <!--resumen-->
 ---
 
+La verdad es que para buscar fotógrafo no hemos dado muchas vueltas... Teníamos claro que íbamos a llamar a uno de los mejores fotógrafos de Navalcarnero. Además, estuvimos en otra boda y nos gustó muchísimo el trabajo que hizo.
 
+¡Así que esperamos que nuestras fotos y las vuestras salgan genial!
