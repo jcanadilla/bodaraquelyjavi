@@ -20,6 +20,6 @@ Simplemente puedo decir que todas esas frases que hemos oído alguna vez, son ci
 
 A mí me pasó eso exactamente. Iba con una idea en la cabeza, pero al probarme varios modelos, pude ver que no era eso lo que realmente me quedaba bien y me gustaba...
 
-Quería verme como una novia espectacular, y me probé de todo: con encaje, sin encaje, con pedreria, sin pedrería, liso, con espalda abierta, con espalda cerrada, con cola larga, con cola media, sin cola,  no sé cuantos tipos de telas, vestidos que pesaban más que yo... hasta que me probé el último y dije ¡guau!
+Quería verme como una novia espectacular, y me probé de todo: con encaje, sin encaje, con pedreria, sin pedrería, liso, con espalda abierta, con espalda cerrada, con cola larga, con cola media, sin cola, no sé cuantos tipos de telas, vestidos que pesaban más que yo... hasta que me probé el último y dije: ¡guau!
 
 Así que tendréis que esperar al día 13 de mayo para verme sabiendo simplemente que me he comprado un Pronovias de alta costura.
