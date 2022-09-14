@@ -1,0 +1,17 @@
+{
+	"name": "optimizador",
+	"main": "index.js",
+	"type": "module",
+	"version": "1.0.0",
+	"license": "MIT",
+	"scripts": {
+		"start": "node ."
+	},
+	"dependencies": {
+		"bluebird": "^3.7.2",
+		"glob": "^8.0.3",
+		"imagemin": "^8.0.1",
+		"imagemin-jpegtran": "^7.0.0",
+		"imagemin-optipng": "^8.0.0"
+	}
+}

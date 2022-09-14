@@ -61,3 +61,5 @@ collections:
   posts:
     output: true
     permalink: /f57dfbee3893dde04700f97c40ffae91d680bfc5/blog/:categories/:year/:month/:day/:title
+
+exclude: ["optimizador"]
