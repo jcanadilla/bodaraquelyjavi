@@ -5,7 +5,7 @@ layout: default
 ---
 
 <section class="inner-header divider parallax layer-overlay overlay-dark-5"
-	data-bg-img="{{'/assets/images/unsplash/fondo-rosas.jpg' | relative_url}}">
+	data-bg-img="{{'/assets/images/unsplash/fondo-rosas.webp' | relative_url}}">
 	<div class="container pt-120 pb-50">
 		<!-- Section Content -->
 		<div class="section-content pt-100">
@@ -26,14 +26,16 @@ layout: default
 			<div class="col-sm-6 col-md-4 col-lg-4">
 				<article class="post clearfix maxwidth600 mb-30">
 					<div class="entry-header">
-						<div class="post-thumb thumb"> 
+						<div class="post-thumb thumb">
 							<a href="{{post.url | relative_url}}">
-								<img src="{{post.thumbnail | relative_url}}" alt="" class="img-responsive img-fullwidth {{post.bgColor}}">
+								<img src="{{post.thumbnail | relative_url}}" alt=""
+									class="img-responsive img-fullwidth {{post.bgColor}}">
 							</a>
 						</div>
 					</div>
 					<div class="entry-content border-1px p-20">
-						<h5 class="entry-title font-raleway mt-0 pt-0"><a href="{{post.url | relative_url}}">{{post.title}}</a></h5>
+						<h5 class="entry-title font-raleway mt-0 pt-0"><a
+								href="{{post.url | relative_url}}">{{post.title}}</a></h5>
 						<div class="entry-meta">
 							<ul class="list-inline entry-date font-12 mt-5">
 								<li><span class="text-theme-colored">{{post.date | date: "%d-%m-%Y"}}</span>

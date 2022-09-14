@@ -1,8 +1,8 @@
 ---
 layout: post
-thumbnail: /assets/musica/logo.png
-parallax: /assets/musica/grupo_editado.png
-mainImage: /assets/musica/logo.png
+thumbnail: /assets/musica/logo.webp
+parallax: /assets/musica/grupo_editado.webp
+mainImage: /assets/musica/logo.webp
 bgColor: "dark bg-black"
 title:  "¡Ya tenemos música!"
 date:   2022-08-16

@@ -1,8 +1,8 @@
 ---
 layout: post
-thumbnail: /assets/nosotros/web-boda-cortada.jpg
-parallax: /assets/images/unsplash/pc.jpg
-mainImage: /assets/nosotros/web-boda.jpg
+thumbnail: /assets/nosotros/web-boda-cortada.webp
+parallax: /assets/images/unsplash/pc.webp
+mainImage: /assets/nosotros/web-boda.webp
 bgColor: ""
 title:  "¡Publicamos la web de la boda!"
 date:   2022-07-10

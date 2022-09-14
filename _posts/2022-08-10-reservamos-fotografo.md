@@ -1,8 +1,8 @@
 ---
 layout: post
-thumbnail: /assets/fotografo/kurry.jpg
-parallax: /assets/images/unsplash/camara.jpg
-mainImage: /assets/fotografo/kurry.jpg
+thumbnail: /assets/fotografo/kurry.webp
+parallax: /assets/images/unsplash/camara.webp
+mainImage: /assets/fotografo/kurry.webp
 bgColor: ""
 title:  "¡Ya tenemos fotógrafo!"
 date:   2022-08-10

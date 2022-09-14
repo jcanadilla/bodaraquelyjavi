@@ -1,8 +1,8 @@
 ---
 layout: post
-thumbnail: /assets/trajes/vestido.png
-parallax: /assets/images/unsplash/vestidos.jpg
-mainImage: /assets/trajes/vestido.png
+thumbnail: /assets/trajes/vestido.webp
+parallax: /assets/images/unsplash/vestidos.webp
+mainImage: /assets/trajes/vestido.webp
 bgColor: "bg-gray-lighter"
 title:  "¡La novia ya tiene vestido!"
 date:   2022-08-23
