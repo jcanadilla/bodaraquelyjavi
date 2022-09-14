@@ -1,8 +1,8 @@
 ---
 layout: post
-thumbnail: /assets/trajes/traje.webp
-parallax: /assets/images/unsplash/trajes.webp
-mainImage: /assets/trajes/traje.webp
+thumbnail: /assets/fotos/trajes/traje.webp
+parallax: /assets/fotos/unsplash/trajes.webp
+mainImage: /assets/fotos/trajes/traje.webp
 bgColor: "bg-gray-lighter"
 title:  "¡El novio ya tiene traje!"
 date:   2022-08-27

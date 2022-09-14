@@ -1,8 +1,8 @@
 ---
 layout: post
-thumbnail: /assets/iglesia/iglesia_noche.webp
-parallax: /assets/images/unsplash/anillos.webp
-mainImage: /assets/iglesia/iglesia_noche_original.webp
+thumbnail: /assets/fotos/iglesia/iglesia_noche.webp
+parallax: /assets/fotos/unsplash/anillos.webp
+mainImage: /assets/fotos/iglesia/iglesia_noche_original.webp
 bgColor: ""
 title:  "¡Ya tenemos fecha de boda!"
 date:   2022-07-11 19:40:00 +0200

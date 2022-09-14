@@ -1,8 +1,8 @@
 ---
 layout: post
-thumbnail: assets/cena/finca2.webp
-parallax: /assets/cena/escalera.webp
-mainImage: /assets/cena/finca2.webp
+thumbnail: assets/fotos/cena/finca2.webp
+parallax: /assets/fotos/cena/escalera.webp
+mainImage: /assets/fotos/cena/finca2.webp
 bgColor: ""
 title:  "¡La finca La Peraleña nos espera!"
 date:   2022-08-06 00:00
