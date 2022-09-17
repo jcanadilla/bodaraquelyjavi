@@ -42,7 +42,7 @@ layout: default
 										<label class="form-label mt-10" for="form_num_niños">Niños (con menú
 											infantil)</label>
 										<input type="number" id="form_num_niños" name="form_num_niños" required min="0"
-											max="10" class="form-control">
+											max="10" value="0" class="form-control">
 									</div>
 								</div>
 							</div>
@@ -81,19 +81,19 @@ layout: default
 											<option value="sí">Sí</option>
 										</select>
 									</div>
-									<div class="mt-10 ml-30">
+									<div class="mt-10 ml-30 hidden" id="form_autobus_options">
 										<span>
-											<input type="checkbox" name="form_autobus_avila" value="avila">
+											<input type="radio" name="form_autobus_value" value="avila">
 											Ávila → Navalcarnero → Finca La Peraleña → Ávila
 											<br />
 											<i class="ml-20">salida a las 14:30h y regreso a las 03:00h</i>
 										</span>
 										<br />
 										<span>
-											<input type="checkbox" name="form_autobus_naval" value="naval">
+											<input type="radio" name="form_autobus_value" value="naval">
 											Navalcarnero → Finca La Peraleña → Navalcarnero
 											<br />
-											<i class="ml-20">salida a las 18:30h y regreso a las 03:00h</i>
+											<i class="ml-20">salida a las 19:00h y regreso a las 03:00h</i>
 										</span>
 										<br />
 										<i>* los horarios, de momento, son orientativos</i>
@@ -119,6 +119,15 @@ layout: default
 					</form>
 					<!-- rsvp Form Validation-->
 					<script type="text/javascript">
+
+						$('#form_autobus').on('change', function(e){
+							console.log($('#form_autobus').val())
+							if($('#form_autobus').val() =='sí'){
+								$('#form_autobus_options').removeClass('hidden')
+							}else{
+								$('#form_autobus_options').addClass('hidden')
+							}
+						})
 						$('#subscription-form').on('submit', function (e) {
 
 							e.preventDefault();
@@ -138,8 +147,7 @@ layout: default
 *Confirmo asistencia*: ${data.form_asistencia}
 *Menú especial*: ${data.form_menu_especial}
 *Autobús*: ${data.form_autobus}
-	${data.form_autobus_avila ? 'Ávila → Navalcarnero → Finca La Peraleña → Ávila' : ''}
-	${data.form_autobus_naval ? 'Navalcarnero → Finca La Peraleña → Navalcarnero' : ''}
+	${data.form_autobus=='sí' ? data.form_autobus_value : ''}
 *Comentarios*: ${data.form_comentarios}
 `.replaceAll('	\n', '');//usamos el replace all para eliminar las opciones de buses vacias
 							// make the url
