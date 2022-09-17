@@ -28,6 +28,7 @@
 						<div class="row">
 							<div class="col-md-12">
 								<h1 class="title text-white">{{page.title}}</h1>
+								<h3 class="text-white">{{page.date | date: "%d-%m-%Y"}}</h3>
 							</div>
 						</div>
 					</div>
@@ -49,12 +50,13 @@
 									<div class="entry-content mt-10">
 										{{content}}
 									</div>
-									<div class="entry-meta">
+									<!--<div class="entry-meta">
 										<ul class="list-inline">
 											<li>Fecha de publicación: <span class="text-theme-colored">{{page.date |
 													date: "%d-%m-%Y"}}</span></li>
 										</ul>
 									</div>
+									-->
 								</article>
 								<div class="tagline p-0 pt-20 mt-5">
 									<div class="row mt-30">
