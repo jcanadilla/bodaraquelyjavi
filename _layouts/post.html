@@ -68,16 +68,16 @@
 
 										{% if page.previous != nil %}
 										<div class="col-md-{{colSize}}">
-											<a href="{{page.previous.url | relative_url}}"><i
-													class="fa fa-arrow-left text-theme-colored"></i> <span></span>
-												Post anterior: {{page.previous.title}}
+											<a href="{{page.previous.url | relative_url}}">
+												<i class="fa fa-arrow-left text-theme-colored"></i>
+												<b>Leer:</b> <i>{{page.previous.title}}</i>
 											</a>
 										</div>
 										{% endif %}
 										{% if page.next != nil %}
 										<div class="col-md-{{colSize}} text-right">
-											<a href="{{page.next.url | relative_url}}"><span></span>
-												Siguiente post: {{page.next.title}}
+											<a href="{{page.next.url | relative_url}}">
+												<b>Leer:</b> <i>{{page.next.title}}</i>
 												<i class="fa fa-arrow-right text-theme-colored"></i>
 											</a>
 										</div>
