@@ -13,9 +13,9 @@ excerpt_separator: <!--resumen-->
 
 Como ya sabe todo el mundo, el vestido de la novia tiene que ser el secreto mejor guardado, así que poco más voy a poder adelantaros por aquí.
 Simplemente puedo decir que todas esas frases que hemos oído alguna vez, son ciertas
-> *- hay un vestido para cada novia*
+> *- Hay un vestido para cada novia*
 > 
-> *- cuando llegue el momento, sabrás perfectamente cuál es tu vestido*
+> *- Cuando llegue el momento, sabrás perfectamente cuál es tu vestido*
 
 
 A mí me pasó eso exactamente. Iba con una idea en la cabeza, pero al probarme varios modelos, pude ver que no era eso lo que realmente me quedaba bien y me gustaba...
