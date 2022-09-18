@@ -1,0 +1,54 @@
+---
+title: Galería
+menu: galeria
+layout: default
+---
+
+<!-- Section: Contact  -->
+<section class="inner-header divider parallax layer-overlay overlay-dark-8" data-stellar-background-ratio="0.5"
+	data-bg-img="{{'/assets/fotos/unsplash/mesa.webp'| relative_url}}">
+	<div class="container pt-120 pb-50">
+		<!-- Section Content -->
+		<div class="section-content pt-100">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="title text-white">Galería</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container">
+
+		<div class="row">
+			<div class="col-sm-12 col-md-12">
+				<h1 class="text-theme-colored mt-0">Álbum de la boda</h1>
+				<p>Hemos creado un álbum en Google Fotos para que podáis publicar las fotografías que os habéis
+					hecho.
+					También podéis comentar y dar un <i>Me gusta</i> en las que queráis. Seguro que salís todos genial
+					en todas las fotografías.</p>
+				<p>Los pasos para publicar tus fotografías son:</p>
+				<ol class="pl-20" style="list-style: decimal">
+					<li>Pulsa en el botón de abajo (estará disponible el día de la boda).</li>
+					<li>Si tienes Google Fotos instalado, se abrirá la aplicación.</li>
+					<li>Te saldrá un mensaje que pide que te unas al álbum.</li>
+					<li>Y ya está. Ya puedes subirnos tus fotografías, comentar y dar a <i>Me gusta</i>.</li>
+				</ol>
+
+				<div class="text-center mt-20">
+					<a id="album_photos" target="_blank" href="https://photos.app.goo.gl/eJa3FSJpF9GyCYUW8"
+						class="btn btn-dark btn-xl btn-theme-colored"><i class="fa fa-images"></i> Ver el álbum</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	const btn = $('#album_photos');
+	if (new Date() < new Date('2023-05-13')) {
+		btn.addClass('disabled')
+	}
+</script>
