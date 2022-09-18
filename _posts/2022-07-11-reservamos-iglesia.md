@@ -10,7 +10,7 @@ categories: pre-boda
 tags: iglesia preparativos boda
 excerpt_separator: <!--resumen-->
 ---
-Después del mágico día 5 de julio (día de la pedida), queríamos conseguir una bonita fecha en la iglesia de Navalcarnero. Teníamos claro que íbamos casarnos aquí, pero no sabíamos qué disponibilidad tendría; siempre nos decían que en esta iglesia había mucha lista de espera para casarse.
+Después del mágico día 5 de julio (día de la pedida), queríamos conseguir una bonita fecha en la iglesia de Navalcarnero. Teníamos claro que íbamos a casarnos aquí, pero no sabíamos qué disponibilidad tendría; siempre nos decían que en esta iglesia había mucha lista de espera para casarse.
 
 Al día siguiente, fuimos a hablar con el párroco, nos enseñó la lista de días y franjas horarias disponibles. La boda tenía que ser en sábado por la tarde para facilitar que los invitados pudieran venir, y eso limitaba mucho los días libres. **¡Sólo quedaban 5 sábados entre mayo y junio!** 
 
