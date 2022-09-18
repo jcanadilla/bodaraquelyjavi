@@ -1,0 +1,79 @@
+---
+title: Galería
+menu: galeria
+layout: default
+---
+
+<!-- Section: Contact  -->
+<section id="contact" class="divider parallax layer-overlay overlay-dark-8" data-stellar-background-ratio="0.5"
+	data-bg-img="{{'/assets/fotos/unsplash/mesa.webp'| relative_url}}">
+	<div class="container">
+		<!-- Section Content -->
+		<div class="section-content">
+            <div class="row">
+				<div class="col-md-12 text-white text-center">
+                    <form>
+                        <input name="file" id="uploadfile" type="file" />
+                    </form>
+                    <div id="progress"></div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/gh/tanaikech/ResumableUploadForGoogleDrive_js@master/resumableupload_js.min.js"></script>
+
+
+<script>
+    
+    const accessToken = 'AIzaSyA190js15venbQ7Rja_nzUMS7NS0oVyM4U';
+    const folderId = '17iwu40o-8cfur0AHggazfzmYXC1soOf_';
+
+    //const accessToken = gapi.auth.getToken().access_token; // Please set access token here.
+    document.getElementById("uploadfile").addEventListener("change", run, false);
+  
+    function run(obj) {
+      const file = obj.target.files[0];
+      if (file.name != "") {
+        let fr = new FileReader();
+        fr.fileName = file.name;
+        fr.fileSize = file.size;
+        fr.fileType = file.type;
+        fr.readAsArrayBuffer(file);
+        fr.onload = resumableUpload;
+      }
+    }
+  
+    function resumableUpload(e) {
+      document.getElementById("progress").innerHTML = "Initializing.";
+      const f = e.target;
+      const resource = {
+        fileName: f.fileName,
+        fileSize: f.fileSize,
+        fileType: f.fileType,
+        fileBuffer: f.result,
+        accessToken: accessToken,
+        folderId: folderId,
+      };
+      const ru = new ResumableUploadToGoogleDrive();
+      ru.Do(resource, function (res, err) {
+        if (err) {
+          console.log(err);
+          return;
+        }
+        console.log(res);
+        let msg = "";
+        if (res.status == "Uploading") {
+          msg =
+            Math.round(
+              (res.progressNumber.current / res.progressNumber.end) * 100
+            ) + "%";
+        } else {
+          msg = res.status;
+        }
+        document.getElementById("progress").innerText = msg;
+      });
+    }
+  </script> 
