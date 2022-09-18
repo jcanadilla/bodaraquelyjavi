@@ -5,75 +5,50 @@ layout: default
 ---
 
 <!-- Section: Contact  -->
-<section id="contact" class="divider parallax layer-overlay overlay-dark-8" data-stellar-background-ratio="0.5"
+<section class="inner-header divider parallax layer-overlay overlay-dark-8" data-stellar-background-ratio="0.5"
 	data-bg-img="{{'/assets/fotos/unsplash/mesa.webp'| relative_url}}">
-	<div class="container">
+	<div class="container pt-120 pb-50">
 		<!-- Section Content -->
-		<div class="section-content">
-            <div class="row">
-				<div class="col-md-12 text-white text-center">
-                    <form>
-                        <input name="file" id="uploadfile" type="file" />
-                    </form>
-                    <div id="progress"></div>
-                </div>
-            </div>
-    
-        </div>
-    </div>
+		<div class="section-content pt-100">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="title text-white">Galería</h1>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
-<script src="https://cdn.jsdelivr.net/gh/tanaikech/ResumableUploadForGoogleDrive_js@master/resumableupload_js.min.js"></script>
+<section>
+	<div class="container">
 
+		<div class="row">
+			<div class="col-sm-12 col-md-12">
+				<h1 class="text-theme-colored mt-0">Álbum de la boda</h1>
+				<p>Hemos creado un álbum en Google Fotos para que podáis publicar las fotografías que os habéis
+					hecho.
+					También podéis comentar y dar un <i>Me gusta</i> en las que queráis. Seguro que salís todos genial
+					en todas las fotografías.</p>
+				<p>Los pasos para publicar tus fotografías son:</p>
+				<ol class="pl-20" style="list-style: decimal">
+					<li>Pulsa en el botón de abajo (estará disponible el día de la boda).</li>
+					<li>Si tienes Google Fotos instalado, se abrirá la aplicación.</li>
+					<li>Te saldrá un mensaje que pide que te unas al álbum.</li>
+					<li>Y ya está. Ya puedes subirnos tus fotografías, comentar y dar a <i>Me gusta</i>.</li>
+				</ol>
+
+				<div class="text-center mt-20">
+					<a id="album_photos" target="_blank" href="https://photos.app.goo.gl/eJa3FSJpF9GyCYUW8"
+						class="btn btn-dark btn-xl btn-theme-colored"><i class="fa fa-images"></i> Ver el álbum</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 <script>
-    
-    const accessToken = 'AIzaSyA190js15venbQ7Rja_nzUMS7NS0oVyM4U';
-    const folderId = '17iwu40o-8cfur0AHggazfzmYXC1soOf_';
-
-    //const accessToken = gapi.auth.getToken().access_token; // Please set access token here.
-    document.getElementById("uploadfile").addEventListener("change", run, false);
-  
-    function run(obj) {
-      const file = obj.target.files[0];
-      if (file.name != "") {
-        let fr = new FileReader();
-        fr.fileName = file.name;
-        fr.fileSize = file.size;
-        fr.fileType = file.type;
-        fr.readAsArrayBuffer(file);
-        fr.onload = resumableUpload;
-      }
-    }
-  
-    function resumableUpload(e) {
-      document.getElementById("progress").innerHTML = "Initializing.";
-      const f = e.target;
-      const resource = {
-        fileName: f.fileName,
-        fileSize: f.fileSize,
-        fileType: f.fileType,
-        fileBuffer: f.result,
-        accessToken: accessToken,
-        folderId: folderId,
-      };
-      const ru = new ResumableUploadToGoogleDrive();
-      ru.Do(resource, function (res, err) {
-        if (err) {
-          console.log(err);
-          return;
-        }
-        console.log(res);
-        let msg = "";
-        if (res.status == "Uploading") {
-          msg =
-            Math.round(
-              (res.progressNumber.current / res.progressNumber.end) * 100
-            ) + "%";
-        } else {
-          msg = res.status;
-        }
-        document.getElementById("progress").innerText = msg;
-      });
-    }
-  </script> 
+	const btn = $('#album_photos');
+	if (new Date() < new Date('2023-05-13')) {
+		btn.addClass('disabled')
+	}
+</script>
