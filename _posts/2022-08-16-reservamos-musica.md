@@ -11,7 +11,7 @@ tags: musica iglesia preparativos boda
 excerpt_separator: <!--resumen-->
 ---
 
-La madre de la novia ha contratado un grupo selecto de músicos instrumentistas y vocales pertenecientes a las más prestigiosas orquestas y coros profesionales de Madrid para que la ceremonia en la iglesia sea un momento inolvidable con música en vivo.
+Los padres de la novia han contratado un grupo selecto de músicos instrumentistas y vocales pertenecientes a las más prestigiosas orquestas y coros profesionales de Madrid para que la ceremonia en la iglesia sea un momento inolvidable con música en vivo.
 
 Nosotros no hemos escuchado nada de lo que hacen, porque queremos que sea una verdadera sorpresa que quede siempre en nuestro recuerdo.
 
