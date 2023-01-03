@@ -108,12 +108,15 @@ layout: default
 										name="form_comentarios" class="form-control required" rows="5"></textarea>
 								</div>
 							</div>
-							<div class="col-sm-12 text-center">
-								<div class="form-group mb-0">
-									<button type="submit" class="btn btn-colored btn-theme-colored btn-lg btn-submit"
-										data-loading-text="Espera..."><i class="fa fa-brands fa-whatsapp"></i>
-										Enviar por WhatsApp</button>
-								</div>
+							<div class="col-sm-12 mb-10 text-center">
+								<button type="submit" name="phone_to" value="raquel" class="btn btn-colored btn-theme-colored btn-lg btn-submit"
+									data-loading-text="Espera..."><i class="fa fa-brands fa-whatsapp"></i>
+									Enviar por WhatsApp a <b>Raquel</b></button>
+							</div>
+							<div class="col-sm-12 mb-10 text-center">
+								<button type="submit" name="phone_to" value="javier" class="btn btn-colored btn-theme-colored btn-lg btn-submit" data-loading-text="Espera..."><i
+										class="fa fa-brands fa-whatsapp"></i>
+									Enviar por WhatsApp a <b>Javier</b></button>
 							</div>
 						</div>
 					</form>
@@ -133,7 +136,8 @@ layout: default
 							e.preventDefault();
 							const $form = $("#subscription-form");
 
-							const phone = '675493021';
+							const phone_to = $form.find('button[type="submit"][name="phone_to"]:focus').val()
+							const phone = phone_to == 'raquel' ? '675493021' : '670988939';
 
 							// get object i.e {key: 'value'} of form
 							let data = {}
