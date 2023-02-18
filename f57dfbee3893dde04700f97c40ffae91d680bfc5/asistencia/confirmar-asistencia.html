@@ -138,6 +138,7 @@ layout: default
 
 							const phone_to = $form.find('button[type="submit"][name="phone_to"]:focus').val()
 							const phone = phone_to == 'raquel' ? '675493021' : '670988939';
+							const phone_name = phone_to == 'raquel' ? 'Raquel' : 'Javier';
 
 							// get object i.e {key: 'value'} of form
 							let data = {}
@@ -145,7 +146,7 @@ layout: default
 
 							// make the ?text= payload, 
 							const text =
-								`Hola Raquel, he rellenado el formulario de asistencia a través de vuestra página web:
+								`Hola ${phone_name}, he rellenado el formulario de asistencia a través de vuestra página web:
 *Nombre*: ${data.form_nombre}
 *Somos*: ${data.form_num_adultos} adulto/s y ${data.form_num_niños} niño/s
 *Confirmo asistencia*: ${data.form_asistencia}
