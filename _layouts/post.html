@@ -43,9 +43,22 @@
 							<div class="blog-posts single-post">
 								<article class="post clearfix mb-0">
 									<div class="entry-header">
+										{% if page.mainImage %}
 										<!-- Tamaño imagen: w=730&h=400 -->
 										<div class="post-thumb thumb"> <img src="{{page.mainImage | relative_url }}"
 												alt="" class="img-responsive img-fullwidth {{page.bgColor}}"> </div>
+										{% endif %}
+										{% if page.carrouselImages %}
+										<div class="image-carousel">
+											{% for image in page.carrouselImages %}
+											<div class="item">
+												<div class="thumb">
+													<img src="{{image | relative_url }}" alt="" class="img-responsive">
+												</div>
+											</div>
+											{% endfor %}
+										</div>
+										{% endif %}
 									</div>
 									<div class="entry-content mt-10">
 										{{content}}
