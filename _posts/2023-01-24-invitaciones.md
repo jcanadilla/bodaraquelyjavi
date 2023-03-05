@@ -21,7 +21,7 @@ excerpt_separator: <!--resumen-->
 
 La creación de las invitaciones de nuestra boda fue un proceso que quisimos hacer nosotros mismos desde el principio. Para ello, nos convertimos en diseñadores gráficos y utilizamos herramientas como Photoshop para dar vida a nuestras ideas.
 
-Después de recorrenos muchas tiendas en busca de la cartulina, el sobre y la cuerda perfecta, por fin los encontramos y dejamos el trabajo duro a nuestra querida impresora, que trabajó incansablemente durante días.
+Después de recorrernos muchas tiendas en busca de la cartulina, el sobre y la cuerda perfecta, por fin los encontramos y dejamos el trabajo duro a nuestra querida impresora, que trabajó incansablemente durante días.
 
 Finalmente, llegó el momento de cortar, montar y decorar cada invitación. Y para hacerlo más eficiente, establecimos una cadena de montaje donde cada uno tenía una tarea específica (recortar, montar, hacer lacitos...).
 
