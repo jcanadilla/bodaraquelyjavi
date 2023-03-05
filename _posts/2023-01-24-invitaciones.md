@@ -1,6 +1,6 @@
 ---
 layout: post
-thumbnail: /assets/fotos/invitaciones/6.webp
+thumbnail: /assets/fotos/invitaciones/originales/6_portada.webp
 parallax: /assets/fotos/invitaciones/7.webp
 carrouselImages: [
 	"/assets/fotos/invitaciones/1.webp",

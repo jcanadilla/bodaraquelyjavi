@@ -11,9 +11,7 @@ tags: zapatos novia preparativos boda
 excerpt_separator: <!--resumen-->
 ---
 
-Otra de las cosas importantísimas para la novia, a parte del vestido, son los zapatos. 
-
-La verdad es que no tuve muchas dudas, buscaba unos zapatos buenos y sobre todo cómodos que me permitiesen aguantar todo el día con ellos. 
+Otra de las cosas importantísimas para la novia aparte del vestido, son los zapatos. Sinceramente, no tuve muchas dudas; buscaba unos zapatos buenos y, sobre todo, cómodos que me permitiesen aguantar todo el día con ellos.
 
 Me enamoré de Lodi por su elegancia y calidad y porque se fabrican íntegramente en España. También me sorprendió mucho que en la caja de los zapatos vienese una tarjeta de agradecimiento por la compra.
 
