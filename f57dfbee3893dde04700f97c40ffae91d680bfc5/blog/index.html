@@ -42,7 +42,7 @@ layout: default
 								</li>
 							</ul>
 						</div>
-						<p class="text-left mb-20 mt-15 font-13">{{ post.content | truncate: 190 }}</p>
+						<div class="text-left mb-20 mt-15 font-13">{{ post.content | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | truncate: 190 }}</div>
 						<a class="btn btn-dark btn-theme-colored btn-sm btn-flat pull-left mt-0"
 							href="{{post.url | relative_url}}">Leer más</a>
 						<div class="clearfix"></div>
