@@ -1,6 +1,6 @@
 ---
 layout: post
-thumbnail: /assets/fotos/despedida/portada.webp
+thumbnail: /assets/fotos/despedida/6.webp
 parallax: /assets/fotos/despedida/granada.webp
 carrouselImages: [
 	"/assets/fotos/despedida/1.webp",
