@@ -10,7 +10,7 @@ tags: autobuses boda
 excerptseparator: <!--resumen-->
 ---
 
-Ya os dijimos que queríamos que viniérais tranquilos a nuestra boda para que pudiérais bailar y disfrutar de las copas hasta tarde y no os preocupáseis de la vuelta con el coche.
+Ya os dijimos que queríamos que viniérais tranquilos a nuestra boda para que pudiérais bailar y disfrutar de las copas hasta tarde y que no os preocupáseis de la vuelta con el coche.
 
 Recordad estar 15 min antes de la salida del autobús para que no haya retrasos.
 
