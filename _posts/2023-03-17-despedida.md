@@ -24,10 +24,8 @@ excerptseparator: <!--resumen-->
 
 ¡Nuestros amigos nos llevan 4 días de despedida conjunta! ¿A dónde? pues la verdad es que no lo sabíamos. Simplemente nos metimos en el coche y tras 5 horas de viaje y una miniparadita llegamos a nuestro destino: **Granada**.
 
-Se lo han currado muchisimo, reservaron una casita muy mona y decoraron el salon, nuestra habitacion y tenían la compra preparada.
+Se lo han currado muchísimo, reservaron una casita muy mona y decoraron el salón, nuestra habitación y tenían todo preparado para empezar a disfrutar.
 
-Nos fuimos a conocer granada y sus tapas y raciones también.
+Nos hemos recorrido Granada y hemos disfrutado de sus tapas y raciones. ¡Ah! y también nos llevaron a la Alhambra
 
-Tambien nos llevaron a la Alhambra! La verdad es que andamos muchisimo, pero mereció la pena.
-
-Nos lo pasamos genial y les queremos muchísimo. ¡Gracias por todo!
+Nos lo hemos pasado genial y les queremos muchísimo. ¡Gracias por todo!
