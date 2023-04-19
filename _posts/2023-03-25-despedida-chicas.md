@@ -1,7 +1,7 @@
 ---
 layout: post
-thumbnail: /assets/fotos/testigos/spa.webp
-parallax: /assets/fotos/testigos/spa.webp
+thumbnail: /assets/fotos/despedida_chicas/spa.webp
+parallax: /assets/fotos/despedida_chicas/spa.webp
 carrouselImages: [
 	"/assets/fotos/despedida_chicas/1.webp",
 	"/assets/fotos/despedida_chicas/2.webp",
