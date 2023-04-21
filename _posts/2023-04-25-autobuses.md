@@ -4,7 +4,7 @@ thumbnail: /assets/fotos/unsplash/bus.webp
 parallax: /assets/fotos/unsplash/bus.webp
 bgColor: "bg-gray-lighter"
 title:  "¡Horarios de autobuses!"
-date:   2023-04-19
+date:   2023-04-25
 categories: pre-boda
 tags: autobuses boda
 excerptseparator: <!--resumen-->
