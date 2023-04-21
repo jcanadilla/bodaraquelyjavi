@@ -3,6 +3,8 @@ layout: post
 thumbnail: /assets/fotos/despedida/6.webp
 parallax: /assets/fotos/despedida/granada.webp
 carrouselImages: [
+	"/assets/fotos/despedida/00.webp",
+	"/assets/fotos/despedida/0.webp",
 	"/assets/fotos/despedida/1.webp",
 	"/assets/fotos/despedida/2.webp",
 	"/assets/fotos/despedida/3.webp",
@@ -12,7 +14,6 @@ carrouselImages: [
 	"/assets/fotos/despedida/7.webp",
 	"/assets/fotos/despedida/8.webp",
 	"/assets/fotos/despedida/9.webp",
-	"/assets/fotos/despedida/10.webp",
 ]
 bgColor: "bg-gray-lighter"
 title:  "¡4 días de despedida conjunta!"
