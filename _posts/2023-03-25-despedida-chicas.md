@@ -15,7 +15,7 @@ tags: despedida boda
 excerptseparator: <!--resumen-->
 ---
 
-¡Las niñas me han preprado una sopresa muy especial y esta vez el plan era solo para nosotras &#9829; !
+¡Las niñas me han preparado una sopresa muy especial y esta vez el plan era solo para nosotras &#9829; !
 
 Masaje, spa, cenita y copas. Para mí ha sido un plan perfecto.
 
