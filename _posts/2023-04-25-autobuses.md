@@ -16,7 +16,7 @@ Ya os dijimos que queríamos que viniérais tranquilos a nuestra boda para que p
 
 Así que aquí os dejamos los puntos de salida y horarios de los autobuses:
 
-### Ávila → Navalcarnero → Finca La Peraleña → Ávila
+### <span class="text-theme-colored">Ávila → Navalcarnero → Finca La Peraleña → Ávila</span>
 - **Ida (hasta la Iglesia de Navalcarnero)**
   - Centro de Recepción de Visitantes (Av. de Madrid, 39) - salida a las **14:30h**
   - Cafetería Gran Vía (C. Agustín Rodríguez Sahagún, 40) - pasará a las **14:40h**
@@ -28,7 +28,7 @@ Así que aquí os dejamos los puntos de salida y horarios de los autobuses:
   - Finca La Peraleña - salida a las **05:00h**
   - una vez llegue a Ávila se realizarán las mismas paradas que en la ida
 
-### Navalcarnero → Finca La Peraleña → Navalcarnero
+### <span class="text-theme-colored">Navalcarnero → Finca La Peraleña → Navalcarnero</span>
 - **Ida**
   - Pozo de los Capones - salida a las **18:30h**
 
