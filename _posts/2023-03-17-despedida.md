@@ -23,10 +23,10 @@ tags: despedida boda
 excerptseparator: <!--resumen-->
 ---
 
-¡Nuestros amigos nos llevan 4 días de despedida conjunta! ¿A dónde? pues la verdad es que no lo sabíamos. Simplemente nos metimos en el coche y tras 5 horas de viaje y una miniparadita llegamos a nuestro destino: **Granada**.
+¡Nuestros amigos nos llevaron 4 días de despedida conjunta! ¿A dónde? pues la verdad es que no lo sabíamos. Simplemente nos metimos en el coche y tras 5 horas de viaje y una miniparadita llegamos a nuestro destino: **Granada**.
 
 Se lo han currado muchísimo, reservaron una casita muy mona y decoraron el salón, nuestra habitación y tenían todo preparado para empezar a disfrutar.
 
-Nos hemos recorrido Granada y hemos disfrutado de sus tapas y raciones. ¡Ah! y también nos llevaron a la Alhambra
+Nos hemos recorrido Granada y hemos disfrutado de sus tapas y raciones. ¡Ah! y también nos llevaron a la Alhambra.
 
 Nos lo hemos pasado genial y les queremos muchísimo. ¡Gracias por todo!
