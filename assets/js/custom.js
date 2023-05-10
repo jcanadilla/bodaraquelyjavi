@@ -589,6 +589,20 @@ var THEMEMASCOT = THEMEMASCOT || {};
 			const lovePhrase = phrases[randomNumber];
 
 			$("#frase-amor").text(lovePhrase);
+		},
+
+		/* ---------------------------------------------------------------------- */
+        /* ---------------------------- RandomLovePhrase ---------------------------- */
+		/* ---------------------------------------------------------------------- */
+		CheckGreatDay: function () {
+			const today = new Date();
+
+			const greatDay = new Date(2023, 4, 13, 17);
+
+			if (today > greatDay) {
+				$("#countdown").addClass("hidden");
+				$("#greatDay").removeClass("hidden");
+			}
 		}
 
     };
@@ -2010,6 +2024,7 @@ var THEMEMASCOT = THEMEMASCOT || {};
             THEMEMASCOT.widget.init();
 			THEMEMASCOT.documentOnReady.windowscroll();
 			THEMEMASCOT.initialize.RandomLovePhrase();
+			THEMEMASCOT.initialize.CheckGreatDay();
             $.stellar('refresh');
         },
 
