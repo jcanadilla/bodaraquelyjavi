@@ -28,6 +28,8 @@ Así que aquí os dejamos los puntos de salida y horarios de los autobuses:
   - Finca La Peraleña - salida a las **05:00h**
   - una vez llegue a Ávila se realizarán las mismas paradas que en la ida
 
+Empresa: **Autocares Muñoz Travel**
+
 ### <span class="text-theme-colored">Navalcarnero → Finca La Peraleña → Navalcarnero</span>
 - **Ida**
   - Pozo de los Capones - salida a las **18:30h**
@@ -35,4 +37,5 @@ Así que aquí os dejamos los puntos de salida y horarios de los autobuses:
 - **Vuelta**
   - Finca La Peraleña - salida a las **05:00h**
 
+Empresa: **Autobuses Alfredo Colomo**
 
