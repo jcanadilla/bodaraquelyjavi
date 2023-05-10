@@ -1,19 +1,10 @@
 ---
 layout: post
-thumbnail: /assets/fotos/despedida/6.webp
-parallax: /assets/fotos/despedida/granada.webp
+thumbnail: /assets/fotos/cajas/1.webp
+parallax: /assets/fotos/cajas/2.webp
 carrouselImages: [
-	"/assets/fotos/despedida/00.webp",
-	"/assets/fotos/despedida/0.webp",
-	"/assets/fotos/despedida/1.webp",
-	"/assets/fotos/despedida/2.webp",
-	"/assets/fotos/despedida/3.webp",
-	"/assets/fotos/despedida/4.webp",
-	"/assets/fotos/despedida/5.webp",
-	"/assets/fotos/despedida/6.webp",
-	"/assets/fotos/despedida/7.webp",
-	"/assets/fotos/despedida/8.webp",
-	"/assets/fotos/despedida/9.webp",
+	"/assets/fotos/cajas/1.webp",
+	"/assets/fotos/cajas/2.webp",
 ]
 bgColor: "bg-gray-lighter"
 title:  "Cajas de madera personalizadas"
