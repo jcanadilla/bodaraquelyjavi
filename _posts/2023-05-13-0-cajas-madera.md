@@ -7,7 +7,7 @@ carrouselImages: [
 	"/assets/fotos/cajas/2.webp",
 ]
 bgColor: "bg-gray-lighter"
-title:  "Cajas de madera personalizadas"
+title:  "Cajas para arras y anillos personalizadas"
 date:   2023-05-13
 categories: boda
 tags: cajas boda
