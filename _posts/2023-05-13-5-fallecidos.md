@@ -1,8 +1,8 @@
 ---
 layout: post
-thumbnail: /assets/fotos/qr/beads.webp
-parallax: /assets/fotos/qr/beads.webp
-mainImage: /assets/fotos/qr/collage.webp
+thumbnail: /assets/fotos/fallecidos/1.webp
+parallax: /assets/fotos/fallecidos/2.webp
+mainImage: /assets/fotos/fallecidos/1.webp
 bgColor: "bg-gray-lighter"
 title:  "Recuerdo por los fallecidos"
 date:   2023-05-13
