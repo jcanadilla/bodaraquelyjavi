@@ -1,29 +1,20 @@
 ---
 layout: post
-thumbnail: /assets/fotos/despedida/6.webp
-parallax: /assets/fotos/despedida/granada.webp
+thumbnail: /assets/fotos/libro/0.webp
+parallax: /assets/fotos/libro/0.webp
 carrouselImages: [
-	"/assets/fotos/despedida/00.webp",
-	"/assets/fotos/despedida/0.webp",
-	"/assets/fotos/despedida/1.webp",
-	"/assets/fotos/despedida/2.webp",
-	"/assets/fotos/despedida/3.webp",
-	"/assets/fotos/despedida/4.webp",
-	"/assets/fotos/despedida/5.webp",
-	"/assets/fotos/despedida/6.webp",
-	"/assets/fotos/despedida/7.webp",
-	"/assets/fotos/despedida/8.webp",
-	"/assets/fotos/despedida/9.webp",
+	"/assets/fotos/libro/1.webp",
+	"/assets/fotos/libro/2.webp",
 ]
 bgColor: "bg-gray-lighter"
-title:  "Libros de firmas"
+title:  "Libro de firmas"
 date:   2023-05-13
 categories: boda
 tags: libro firmas boda
 excerptseparator: <!--resumen-->
 ---
 
-Queridos invitados, nos encantaría que nos dejárais un recuerdo vuestro en nuestro gran día. Para ello, hemos preparado dos libros de firmas muy especiales:
+Queridos invitados, nos encantaría que nos dejárais un recuerdo vuestro en nuestro gran día. Para ello, hemos preparado dos libro de firmas muy especiales:
 
 Uno de madera, donde podréis escribir vuestro nombre o una pequeña dedicatoria en un corazón de madera y colocarlo en el marco. Será un bonito adorno en nuestro hogar y una forma de teneros siempre cerca de nuestro corazón.
 
