@@ -12,7 +12,7 @@ carrouselImages: [
 ]
 bgColor: "bg-gray-lighter"
 title:  "Regalos a personas especiales"
-date:   2023-05-14
+date:   2023-05-22
 categories: boda
 tags: regalos especiales boda
 excerptseparator: <!--resumen-->
