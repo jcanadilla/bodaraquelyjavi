@@ -18,15 +18,14 @@ Así que aquí os dejamos los puntos de salida y horarios de los autobuses:
 
 ### <span class="text-theme-colored">Ávila → Navalcarnero → Finca La Peraleña → Ávila</span>
 - **Ida (hasta la Iglesia de Navalcarnero)**
-  - Centro de Recepción de Visitantes (Av. de Madrid, 39) - salida a las **14:30h**
-  - Cafetería Gran Vía (C. Agustín Rodríguez Sahagún, 40) - pasará a las **14:40h**
+  - Cafetería Gran Vía (C. Agustín Rodríguez Sahagún, 40) - pasará a las **14:30h**
 
 - **Ida (de Navalcarnero a la Finca)**
-  - Pozo de los Capones - salida a las **18:30h**
+  - Plaza Segovia - salida a las **18:30h**
 
 - **Vuelta**
   - Finca La Peraleña - salida a las **05:00h**
-  - una vez llegue a Ávila se realizarán las mismas paradas que en la ida
+  - una vez llegue a Ávila, se realizará la parada en la Cafetería Gran Vía
 
 Empresa: **Autocares Muñoz Travel**
 
