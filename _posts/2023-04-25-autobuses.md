@@ -25,7 +25,7 @@ Así que aquí os dejamos los puntos de salida y horarios de los autobuses:
 
 - **Vuelta**
   - Finca La Peraleña - salida a las **05:00h**
-  - una vez llegue a Ávila, se realizará la parada en la Cafetería Gran Vía
+  - Una vez llegue a Ávila, se realizará la parada en la Cafetería Gran Vía.
 
 Empresa: **Autocares Muñoz Travel**
 
@@ -35,6 +35,7 @@ Empresa: **Autocares Muñoz Travel**
 
 - **Vuelta**
   - Finca La Peraleña - salida a las **05:00h**
+  - Una vez llegue a Navalcarnero, se realizará la parada en el Pozo de los Capones.
 
 Empresa: **Autobuses Alfredo Colomo**
 
